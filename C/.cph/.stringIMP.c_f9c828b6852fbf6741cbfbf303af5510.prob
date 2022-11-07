@@ -1,0 +1,1 @@
+{"name":"Local: stringIMP","url":"h:\\Coding\\Codes\\C Exercise\\stringIMP.c","tests":[{"id":1665408559911,"input":"C\nLanguage\nWelcome To C!!","output":"C\nLanguage\nWelcome To C!!"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\C Exercise\\stringIMP.c","group":"local","local":true}

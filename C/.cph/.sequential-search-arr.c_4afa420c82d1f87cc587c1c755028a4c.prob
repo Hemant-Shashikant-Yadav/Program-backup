@@ -1,0 +1,1 @@
+{"name":"Local: sequential-search-arr","url":"h:\\Coding\\Codes\\C\\sequential-search-arr.c","tests":[{"id":1666284216790,"input":"15 153 21 51 32 1 15 31 54 36\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\C\\sequential-search-arr.c","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Volume_Control","url":"h:\\Coding\\Codes\\exercise\\Volume_Control.c","tests":[{"id":1657441306243,"input":"2\n50 54\n12 10","output":"4\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\exercise\\Volume_Control.c","group":"local","local":true}
