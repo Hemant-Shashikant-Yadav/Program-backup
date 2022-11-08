@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class account
@@ -7,7 +7,7 @@ private:
     int opt;
     char name[50];
     long int ACCnumber;
-    float bal = 0, intr, amt, acc, rate, dep, month, wet;
+    float bal = 0, intr, amt, acc, rate, dep, time, wet,n,principal;
 
 public:
     account();
@@ -50,13 +50,29 @@ void account::withdraw()
     bal -= wet;
     displaybal();
 }
+void account::compund()
+{
+    cout << "Enter principal ammount = ";
+    cin>>principal;
+    cout << "Enter intrest rate = ";
+    cin>>rate;
+    cout << "Enter time period = ";
+    cin>>time;
+    cout << "Enter number of times interest applied per time period = ";
+    cin>>n;
+    amt = principal*(pow((1 + rate / n), n*time));
+
+    cout<<"\vThe final amount is = "<<amt<<endl;
+    cout<<"\vThe compund intrest is = "<<amt-principal<<endl;
+
+}
 void account::menu()
 {
     while (1)
     {
-        cout << "\vWelcome \n1.Display balance\n2.Diposite\n3.Withdraw\n4.Exit\nEnter the option number = ";
+        cout << "\vWelcome \n1.Display balance\n2.Diposite\n3.Withdraw\n4.Compund intrest\n5.Exit\nEnter the option number = ";
         cin >> opt;
-        if (opt == 4)
+        if (opt == 5)
         {
             break;
         }
@@ -72,6 +88,9 @@ void account::menu()
                 break;
             case 3:
                 withdraw();
+                break;
+            case 4:
+                compund();
                 break;
 
             default:
