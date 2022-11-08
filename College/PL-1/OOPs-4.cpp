@@ -7,7 +7,7 @@ private:
     int opt;
     char name[50];
     long int ACCnumber;
-    float bal = 0, intr, amt=0, acc, rate, dep, time, wet, n, principal;
+    float bal = 0, intr, amt = 0, acc, rate, dep, time, wet, n, principal;
 
 public:
     account();
@@ -61,7 +61,7 @@ void account::compund()
     cin >> time;
     cout << "Enter number of times interest applied per time period = ";
     cin >> n;
-    amt = principal * (pow((1 + ((rate/100) / n)),( n * time)));
+    amt = principal * (pow((1 + ((rate / 100) / n)), (n * time)));
 
     cout << "\vThe final amount is = " << amt << endl;
     cout << "\vThe compund intrest is = " << amt - principal << endl;
@@ -72,10 +72,10 @@ void account::simple()
     cin >> principal;
     cout << "Enter intrest rate = ";
     cin >> rate;
-    
+
     cout << "Enter time period = ";
     cin >> time;
-    amt = principal * (1 + ((rate/100) * time));
+    amt = principal * (1 + ((rate / 100) * time));
     cout << "\vThe final amount is = " << amt << endl;
     cout << "\vThe simple intrest is = " << amt - principal << endl;
 }
