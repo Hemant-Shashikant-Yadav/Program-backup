@@ -20,3 +20,5 @@ int main()
     printf("\nNumber of moves = %d",count);
     return 0;
 }
+
+
