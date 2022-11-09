@@ -44,6 +44,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "stdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "valarray": "c"
     }
 }
