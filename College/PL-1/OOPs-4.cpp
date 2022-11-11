@@ -97,7 +97,7 @@ void account::menu()
                 displaybal();
                 break;
             case 2:
-                deposite();
+                deposite();     
                 break;
             case 3:
                 withdraw();

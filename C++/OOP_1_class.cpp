@@ -3,7 +3,8 @@ using namespace std;
 
 class Number
 {
-
+    
+private:
     int a;
 
 public:
