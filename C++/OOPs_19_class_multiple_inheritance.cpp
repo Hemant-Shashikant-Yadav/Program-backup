@@ -96,11 +96,11 @@ int main()
     student_data d;
     student_grade g;
     student_marks m;
-    d.setdata();
+    m.setdata();
 
     m.getmark();
 
-    d.getdata();
+    m.getdata();
     m.display();
     g.grade();
     return 0;
