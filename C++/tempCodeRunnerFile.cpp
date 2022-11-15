@@ -1,5 +1,4 @@
-
-number::number()
+int volume(int radius, int height)
 {
-    a = 0;
+    return (3.14 * radius * height);
 }
