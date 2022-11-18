@@ -3,7 +3,8 @@ using namespace std;
 
 class Measurement
 {
-    int side, lenth, breadth, height, opt;
+    int  lenth, breadth, height, opt;
+    long side;
     long height1;
     int radius0;
     float radius, base,radius3;
@@ -11,9 +12,9 @@ class Measurement
 
 public:
     void menu();
-    int shape(int side);
-    int shape(int lenght, int breadth);
     int shape(int radius0);
+    int shape(int lenght, int breadth);
+    int shape(long side);
     int shape(float base, int height);
     int shape(float radius, long height);
     int shape(double radius1);
@@ -27,7 +28,7 @@ int Measurement::shape(int lenght, int breadth)
 {
     return (lenght * breadth);
 }
-int Measurement::shape(int side)
+int Measurement::shape(long side)
 {
     return (side * side);
 }
@@ -42,7 +43,7 @@ int Measurement::shape(float radius, long height1)
 
 int Measurement::shape(double radius1)
 {
-    return ((3.14 * radius1 * radius1 * radius1 * 3) / 4);
+    return ((3.14 * radius1 * radius1 * radius1 * 4) / 3);
 }
 
 int Measurement::shape(float radius3, double height2)
@@ -100,8 +101,8 @@ void Measurement::menu()
                 break;
             case 7:
                 cout << "Enter the radius and height = ";
-                cin >> radius3 >> height1;
-                cout << "Volume = " << shape(radius3, height1);
+                cin >> radius3 >> height2;
+                cout << "Volume = " << shape(radius3, height2);
 
                 break;
 

@@ -1,74 +1,94 @@
 #include <iostream>
 using namespace std;
-
-class Marks
+class bankdemo
 {
-    int sub[5];
-    int sum = 0;
+private:
+    char name[20];
+    int accno;
+    float bal, amt, dep;
 
 public:
-    void setdata()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            cout << "Enter marks of subject = ";
-            cin >> sub[i];
-        }
-    }
-    void total()
-    {
-
-        for (int i = 0; i < 5; i++)
-        {
-            sum = sum + sub[i];
-        }
-        cout << "\vThe sum of all subject is = " << sum << endl;
-        cout << "The average of all subject is = " << sum / 5 << endl;
-    }
-    void grade()
-    {
-        int grade = sum / 5;
-        if (grade <= 100 && grade >= 91)
-        {
-            cout << "The grade of student is = A grade";
-        }
-        else if (grade <= 90 && grade >= 81)
-        {
-            cout << "The grade of student is = B grade";
-        }
-        else if (grade <= 80 && grade >= 71)
-        {
-            cout << "The grade of student is = C grade";
-        }
-        else if (grade <= 70 && grade >= 61)
-        {
-            cout << "The grade of student is = D grade";
-        }
-        else if (grade <= 60 && grade >= 51)
-        {
-            cout << "The grade of student is = E grade";
-        }
-        else
-        {
-            cout << "The grade of student is = F grade";
-        }
-    }
-    void display()
-    {
-        for (int i = 0; i < 5; i++)
-        {
-            cout << "\vThe mark of subject = "<< sub[i];
-        }
-    }
+    bankdemo();
+    ~bankdemo();
+    void information();
+    void deposit();
+    void withdraw();
+    void display();
 };
+bankdemo::bankdemo()
+{
+    cout << "enter the name =";
+    gets(name);
+    cout << "enter the accno=";
+    cin >> accno;
+}
+bankdemo ::~bankdemo()
+{
+    cout << "acount removed";
+}
+void bankdemo::information()
+{
+    cout << "enter all info: ";
+    cout << "enter THE BALANCE OF ACCOUNT=";
+    cin >> dep;
+}
 
+void bankdemo::deposit()
+{
+    float a;
+    cout << "deposit" << endl;
+    cout << "enter the amout to deposit" << endl;
+    cin >> a;
+    bal = bal + a;
+}
+void bankdemo::withdraw()
+{
+    float amount;
+    cout << "withdraw" << endl;
+    cout << "enter the amount" << endl;
+    cin >> amount;
+    bal = bal - amount;
+}
+void bankdemo::display()
+{
+
+    cout << "account detail as follow as:" << endl;
+    cout << "name of depositor" << name << endl;
+    cout << "account no" << accno << endl;
+    cout << "balance" << bal << endl;
+}
 int main()
 {
-    Marks M;
-    M.setdata();
-    M.display();
-    M.total();
-    M.grade();
 
-    return 0;
+    bankdemo b;
+    do
+    {
+
+        int choice;
+        cout << "enter the choice";
+        cout << "1.create n account/n2.deposit the amount./n3.withraw the amount/n4.exit" << endl;
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 0:
+            cout << "enter the account";
+            break;
+        case 1:
+            b.information();
+            break;
+        case2:
+            b.deposit();
+            break;
+        case3:
+            b.withdraw();
+            break;
+        case 4:
+            break;
+
+        default:
+            cout << "invalid option\n";
+        }
+
+    } while (1);
 }
