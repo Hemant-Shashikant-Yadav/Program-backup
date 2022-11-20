@@ -9,7 +9,7 @@ int main ()
     printf("Enter a character = ");
     scanf("%c",&ch);
 
-    if (ch>='48'&&ch<='57')
+    if (ch>=48&&ch<=57)
     {
         printf("It is a digit.");
     }
