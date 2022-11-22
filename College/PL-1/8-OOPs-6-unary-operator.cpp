@@ -24,12 +24,11 @@ public:
         cout << "Number 2 = " << num2 << endl;
     }
 
-    Number  operator -(Number &obj)
+    void  operator ++()
     {
-        Number res;
-        res.num1 = -obj.num1;
-        res.num2 = -obj.num2;
-        return res;
+        num1 = ++num1;
+        num2 = ++num2;
+
     }
 };
 
@@ -37,10 +36,10 @@ int main()
 {
     Number N1(10,20),N2(-15,52);
     N1.displayNum();
-    -N1;
+    ++N1;
     N1.displayNum();
     N2.displayNum();
-    -N2;
+    ++N2;
     N2.displayNum();
     return 0;
 }

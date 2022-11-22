@@ -24,12 +24,11 @@ public:
         cout << "Number 2 = " << num2 << endl;
     }
 
-    Number  operator -(Number &obj)
+    void  operator -()
     {
-        Number res;
-        res.num1 = -obj.num1;
-        res.num2 = -obj.num2;
-        return res;
+        num1 = -num1;
+        num2 = -num2;
+
     }
 };
 

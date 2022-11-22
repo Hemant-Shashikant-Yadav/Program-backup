@@ -38,7 +38,7 @@ int Measurement::shape(float base, int height)
 }
 int Measurement::shape(float radius, long height1)
 {
-    return (3.14 * radius * radius * (height1) / 2);
+    return (3.14 * radius * radius * (height1 / 2));
 }
 
 int Measurement::shape(double radius1)
