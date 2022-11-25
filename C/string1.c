@@ -1,15 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 
-
-int main ()
+int main()
 {
-      
+
     char a[50];
 
     printf("Enter string = ");
     gets(a);
 
-    puts(a);   
-      
-    return 0; 
+    puts(a);
+
+    return 0;
 }
