@@ -177,6 +177,7 @@ void delete_at_start()
     {
         p = start;
         start = NULL;
+        last=NULL;
         printf("Data deleted = %d", p->data);
         free(p);
     }
@@ -198,6 +199,7 @@ void delete_at_end()
     {
         p = start;
         start = NULL;
+        last=NULL;
         printf("Data deleted = %d", p->data);
         free(p);
     }
@@ -229,6 +231,7 @@ void delete_at_given()
         {
             p = start;
             start = NULL;
+        last=NULL;
             printf("Data deleted = %d", p->data);
             free(p);
         }
@@ -259,7 +262,7 @@ void delete_at_given()
             if (p != NULL && p->next == NULL)
             {
                 q->next = p->next;
-                last = p;
+                last = q;
                 printf("Data deleted = %d", p->data);
                 free(p);
             }

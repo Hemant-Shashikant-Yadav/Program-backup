@@ -7,7 +7,7 @@ struct node
     struct node *next, *prev;
 };
 typedef struct node NODE;
-NODE *start, *p, *q;
+NODE *start = NULL, *last = NULL, *p, *q;
 int i, loc;
 
 void setData();
@@ -78,6 +78,7 @@ void create_at_start()
         start = p;
         p->next = NULL;
         p->prev = NULL;
+        last = p;
     }
     else
     {
@@ -96,6 +97,7 @@ void create_at_end()
         start = p;
         p->next = NULL;
         p->prev = NULL;
+        last = p;
     }
     else
     {
@@ -107,6 +109,7 @@ void create_at_end()
         p->next = NULL;
         q->next = p;
         p->prev = q;
+        last = p;
     }
 }
 void create_at_given()
@@ -127,6 +130,7 @@ void create_at_given()
         else
         {
             printf("Invalid location.");
+            free(p);
         }
     }
     else
@@ -137,6 +141,7 @@ void create_at_given()
             p->next = start;
             start = p;
             p->prev = NULL;
+            last = p;
         }
         else
         {
@@ -153,6 +158,7 @@ void create_at_given()
                 p->next = NULL;
                 q->next = p;
                 p->prev = q;
+                last = p;
             }
             else if (q != NULL)
             {
@@ -164,6 +170,7 @@ void create_at_given()
             else
             {
                 printf("Invalid location.");
+                free(p);
             }
         }
     }
@@ -181,6 +188,7 @@ void delete_at_start()
         {
             p = start;
             start == NULL;
+            last = NULL;
             printf("Deleted data = %d", p->data);
             free(p);
         }
@@ -188,7 +196,6 @@ void delete_at_start()
 
         {
             p = start;
-
             start = start->next;
             start->prev = NULL;
             printf("Deleted data = %d", p->data);
@@ -208,6 +215,7 @@ void delete_at_end()
         {
             p = start;
             start == NULL;
+            last = NULL;
             printf("Deleted data = %d", p->data);
             free(p);
         }
@@ -241,6 +249,7 @@ void delete_at_given()
         {
             p = start;
             start = NULL;
+            last = NULL;
             printf("Data deleted = %d", p->data);
             free(p);
         }
@@ -273,6 +282,7 @@ void delete_at_given()
             if (p != NULL && p->next == NULL)
             {
                 q->next = NULL;
+                last = q;
                 printf("Data deleted = %d", p->data);
                 free(p);
             }
