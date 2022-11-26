@@ -25,7 +25,7 @@ int checkOctal(char a[])
     int i = 0;
     while (a[i] != '\0')
     {
-        if (a[i] >= '0' && a[i] <= '8')
+        if (a[i] >= '0' && a[i] <= '7')
         {
             i++;
         }
