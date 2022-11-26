@@ -7,7 +7,7 @@ struct node
     struct node *next;
 };
 typedef struct node NODE;
-NODE *start = NULL, *p, *q;
+NODE *start = NULL, *last = NULL, *p, *q;
 int i, loc;
 
 void create_at_start();
@@ -77,6 +77,7 @@ void create_at_start()
     {
         p->next = NULL;
         start = p;
+        last = p;
     }
     else
     {
@@ -93,6 +94,7 @@ void create_at_end()
     {
         p->next = NULL;
         start = p;
+        last = p;
     }
     else
     {
@@ -103,6 +105,7 @@ void create_at_end()
         }
         p->next = NULL;
         q->next = p;
+        last = p;
     }
 }
 void create_at_given()
@@ -119,6 +122,7 @@ void create_at_given()
         {
             p->next = NULL;
             start = p;
+            last = p;
         }
         else
         {
@@ -132,6 +136,7 @@ void create_at_given()
         {
             p->next = start->next;
             start = p;
+            last = p;
         }
         else
         {
@@ -143,7 +148,13 @@ void create_at_given()
                 i++;
             }
 
-            if (q != NULL)
+            if (q != NULL && q->next == NULL)
+            {
+                p->next = q->next;
+                q->next = p;
+                last = p;
+            }
+            else if (q != NULL)
             {
                 p->next = q->next;
                 q->next = p;
@@ -231,7 +242,7 @@ void delete_at_given()
         if (loc == 1)
         {
             p = start;
-            start=start->next;
+            start = start->next;
             printf("Data deleted = %d", p->data);
             free(p);
         }
@@ -245,10 +256,23 @@ void delete_at_given()
                 p = p->next;
                 i++;
             }
-
-            q->next = p->next;
-            printf("Data deleted = %d", p->data);
-            free(p);
+            if (p != NULL && p->next == NULL)
+            {
+                q->next = p->next;
+                last = p;
+                printf("Data deleted = %d", p->data);
+                free(p);
+            }
+            else if (p != NULL)
+            {
+                q->next = p->next;
+                printf("Data deleted = %d", p->data);
+                free(p);
+            }
+            else
+            {
+                printf("Delete can't perform.!!!");
+            }
         }
     }
 }
