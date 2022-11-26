@@ -4,20 +4,21 @@
 struct node
 {
     int data;
-    struct node *next;
+    struct node *next, *prev;
 };
 typedef struct node NODE;
-NODE *start = NULL, *last = NULL, *p, *q;
+NODE *start, *p, *q;
 int i, loc;
 
+void setData();
 void create_at_start();
 void create_at_end();
 void create_at_given();
-void delete_at_start();
 void delete_at_end();
+void delete_at_start();
 void delete_at_given();
 void traverse();
-void setData();
+
 int main()
 {
     int opt;
@@ -66,35 +67,35 @@ int main()
 void setData()
 {
     p = (NODE *)malloc(sizeof(NODE));
+    scanf("%d", &p->data);
 }
 void create_at_start()
 {
-    printf("Enter data = ");
+    printf("Enter Data = ");
     setData();
-    scanf("%d", &p->data);
-
     if (start == NULL)
     {
-        p->next = NULL;
         start = p;
-        last = p;
+        p->next = NULL;
+        p->prev = NULL;
     }
     else
     {
+        start->prev = p;
         p->next = start;
         start = p;
+        p->prev = NULL;
     }
 }
 void create_at_end()
 {
-    printf("Enter data = ");
+    printf("Enter Data = ");
     setData();
-    scanf("%d", &p->data);
     if (start == NULL)
     {
-        p->next = NULL;
         start = p;
-        last = p;
+        p->next = NULL;
+        p->prev = NULL;
     }
     else
     {
@@ -105,38 +106,37 @@ void create_at_end()
         }
         p->next = NULL;
         q->next = p;
-        last = p;
+        p->prev = q;
     }
 }
 void create_at_given()
 {
-    printf("Enter data = ");
+    printf("Enter Data = ");
     setData();
-    scanf("%d", &p->data);
-    printf("Enter location = ");
-    scanf("%d", &loc);
 
+    printf("Enter a location = ");
+    scanf("%d", &loc);
     if (start == NULL)
     {
         if (loc == 1)
         {
             p->next = NULL;
-            start = p;
-            last = p;
+            p->prev = NULL;
+            p = start;
         }
         else
         {
-            printf("Invalid location !!!");
-            free(p);
+            printf("Invalid location.");
         }
     }
     else
     {
         if (loc == 1)
         {
-            p->next = start->next;
+            start->prev = p;
+            p->next = start;
             start = p;
-            last = p;
+            p->prev = NULL;
         }
         else
         {
@@ -150,68 +150,80 @@ void create_at_given()
 
             if (q != NULL && q->next == NULL)
             {
-                p->next = q->next;
+                p->next = NULL;
                 q->next = p;
-                last = p;
+                p->prev = q;
             }
             else if (q != NULL)
             {
+                q->next->prev = p;
                 p->next = q->next;
+                p->prev = q;
                 q->next = p;
             }
             else
             {
-                printf("Invalid location !!!");
-                free(p);
+                printf("Invalid location.");
             }
         }
     }
 }
+
 void delete_at_start()
 {
     if (start == NULL)
     {
-        printf("Linked list is empty.\nDeletion can't perform !!!");
-    }
-    else if (start->next == NULL)
-    {
-        p = start;
-        start = NULL;
-        printf("Data deleted = %d", p->data);
-        free(p);
+        printf("Linkled list is empty. \nDeletion can't perform. !!!");
     }
     else
     {
-        p = start;
-        start = start->next;
-        printf("Data deleted = %d", p->data);
-        free(p);
+        if (start->next == NULL)
+        {
+            p = start;
+            start == NULL;
+            printf("Deleted data = %d", p->data);
+            free(p);
+        }
+        else
+
+        {
+            p = start;
+
+            start = start->next;
+            start->prev = NULL;
+            printf("Deleted data = %d", p->data);
+            free(p);
+        }
     }
 }
 void delete_at_end()
 {
     if (start == NULL)
     {
-        printf("Linked list is empty.\nDeletion can't perform !!!");
-    }
-    else if (start->next == NULL)
-    {
-        p = start;
-        start = NULL;
-        printf("Data deleted = %d", p->data);
-        free(p);
+        printf("Linkled list is empty. \nDeletion can't perform. !!!");
     }
     else
     {
-        p = start;
-        while (p->next != NULL)
+        if (start->next == NULL)
         {
-            q = p;
-            p = p->next;
+            p = start;
+            start == NULL;
+            printf("Deleted data = %d", p->data);
+            free(p);
         }
-        q->next = NULL;
-        printf("Data deleted = %d", p->data);
-        free(p);
+        else
+        {
+            p = start;
+            while (p->next != NULL)
+            {
+                q = p;
+                p = p->next;
+            }
+
+            q->next = NULL;
+            printf("Deleted data = %d", p->data);
+            free(p);
+        }
     }
 }
 void delete_at_given()
@@ -219,9 +231,9 @@ void delete_at_given()
     printf("Enter location = ");
     scanf("%d", &loc);
 
-    if (start == NULL)
+    if (start = NULL)
     {
-        printf("Linked list is empty.\nDeletion can't perform !!!");
+        printf("Linkled list is empty. \nDeletion can't perform. !!!");
     }
     else if (start->next == NULL)
     {
@@ -234,7 +246,7 @@ void delete_at_given()
         }
         else
         {
-            printf("Invalid location.\nDeletion can't perform !!!");
+            printf("Invalid location.");
         }
     }
     else
@@ -243,6 +255,7 @@ void delete_at_given()
         {
             p = start;
             start = start->next;
+            start->next->prev = NULL;
             printf("Data deleted = %d", p->data);
             free(p);
         }
@@ -256,24 +269,20 @@ void delete_at_given()
                 p = p->next;
                 i++;
             }
+
             if (p != NULL && p->next == NULL)
             {
-                q->next = p->next;
-                last = p;
+                q->next = NULL;
                 printf("Data deleted = %d", p->data);
                 free(p);
             }
             else if (p != NULL)
             {
+                p->next->prev = q;
                 q->next = p->next;
                 printf("Data deleted = %d", p->data);
                 free(p);
             }
-            else
-            {
-                printf("Delete can't perform.!!!");
-            }
-            
         }
     }
 }

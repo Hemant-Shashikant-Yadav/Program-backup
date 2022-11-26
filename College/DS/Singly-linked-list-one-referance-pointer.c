@@ -231,7 +231,7 @@ void delete_at_given()
         if (loc == 1)
         {
             p = start;
-            start=start->next;
+            start = start->next;
             printf("Data deleted = %d", p->data);
             free(p);
         }
@@ -245,10 +245,12 @@ void delete_at_given()
                 p = p->next;
                 i++;
             }
-
-            q->next = p->next;
-            printf("Data deleted = %d", p->data);
-            free(p);
+            if (p != NULL)
+            {
+                q->next = p->next;
+                printf("Data deleted = %d", p->data);
+                free(p);
+            }
         }
     }
 }
