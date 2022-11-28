@@ -229,6 +229,7 @@ void delete_at_end()
             }
 
             q->next = NULL;
+            last = q; 
             printf("Deleted data = %d", p->data);
             free(p);
         }
