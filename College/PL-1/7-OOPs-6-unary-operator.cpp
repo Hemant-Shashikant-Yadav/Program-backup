@@ -35,10 +35,13 @@ public:
 int main()
 {
     Number N1(10,20),N2(-15,52);
-    N1.displayNum();
-    -N1;
+    
+    cout<<"Before = "<<endl;
     N1.displayNum();
     N2.displayNum();
+    cout<<"After = "<<endl;
+    -N1;
+    N1.displayNum();
     -N2;
     N2.displayNum();
     return 0;

@@ -6,9 +6,7 @@ class Number
     int num1, num2;
 
 public:
-   
-
-    Number(int n1 =0 , int n2 =0)
+    Number(int n1 = 0, int n2 = 0)
     {
         num1 = n1;
         num2 = n2;
@@ -16,15 +14,15 @@ public:
 
     void displayNum()
     {
-        cout << "Number 1 = " << num1 << endl;
+        cout << "\nNumber 1 = " << num1 << endl;
         cout << "Number 2 = " << num2 << endl;
     }
 
-    Number operator +(Number  &obj)
+    Number operator+(Number &obj)
     {
         Number res;
-        res.num1=num1+obj.num1;
-        res.num2=num2+obj.num2;
+        res.num1 = num1 + obj.num1;
+        res.num2 = num2 + obj.num2;
         return res;
     }
 };
@@ -32,10 +30,13 @@ public:
 int main()
 {
     Number N1(10, 20), N2(5, 10);
+    cout << "After addition = " << endl;
+
     N1.displayNum();
     N2.displayNum();
 
     Number N3 = N1 + N2;
+    cout << "After addition = " << endl;
     N3.displayNum();
     return 0;
 }
