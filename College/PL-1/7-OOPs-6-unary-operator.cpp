@@ -24,22 +24,22 @@ public:
         cout << "Number 2 = " << num2 << endl;
     }
 
-    void  operator -()
-    {
-        num1 = -num1;
-        num2 = -num2;
-
-    }
+        friend void operator - (Number & op1);
 };
+void operator -(Number & op1)
+{
+    op1.num1 = -op1.num1 ;
+    op1.num2 = -op1.num2 ;
+}
 
 int main()
 {
-    Number N1(10,20),N2(-15,52);
-    
-    cout<<"Before = "<<endl;
+    Number N1(10, 20), N2(-15, 52);
+
+    cout << "Before = " << endl;
     N1.displayNum();
     N2.displayNum();
-    cout<<"After = "<<endl;
+    cout << "After = " << endl;
     -N1;
     N1.displayNum();
     -N2;
