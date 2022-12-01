@@ -89,8 +89,9 @@ void create_at_end()
     setData();
     if (start == NULL)
     {
+        p->next = p;
         start = p;
-        p->next = start;
+        last = p;
     }
     else
     {
@@ -99,22 +100,174 @@ void create_at_end()
         {
             q = q->next;
         } while (q->next != start);
-        p->next = start;
         q->next = p;
-        p = last;
+        p->next = start;
+        last = p;
     }
 }
 void create_at_given()
 {
+    setData();
+    printf("Enter the location = ");
+    scanf("%d", &loc);
+
+    if (start == NULL)
+    {
+        if (loc == 1)
+        {
+            p->next = p;
+            start = p;
+            last = p;
+        }
+        else
+        {
+            printf("Invalid location !!!");
+            free(p);
+        }
+    }
+    else
+    {
+        if (loc == 1)
+        {
+            p->next = start;
+            start = p;
+            last->next = start;
+        }
+        else
+        {
+            q = start;
+            i = 1;
+            do
+            {
+                q = q->next;
+                i++;
+            } while (i < loc - 1 && q != start);
+            if (q != start && q->next == start)
+            {
+                p->next = start;
+                q->next = p;
+                last = p;
+            }
+            else
+            {
+                p->next = q->next;
+                q->next = p;
+            }
+        }
+    }
 }
 void delete_at_start()
 {
+    if (start == NULL)
+    {
+        printf("Deletion cannot perform.");
+    }
+    else if (start->next == start)
+    {
+        p = start;
+        start = NULL;
+        last = NULL;
+        printf("Data Deleted = %d", p->data);
+        free(p);
+    }
+    else
+    {
+        p = start;
+        q = last;
+        start = start->next;
+        q->next = start;
+        printf("Data Deleted = %d", p->data);
+        free(p);
+    }
 }
 void delete_at_end()
 {
+    if (start == NULL)
+    {
+        printf("Deletion cannot perform.");
+    }
+    else if (start->next == start)
+    {
+        p = start;
+        start = NULL;
+        last = NULL;
+        printf("Data Deleted = %d", p->data);
+        free(p);
+    }
+    else
+    {
+        p = last;
+        q = start;
+        do
+        {
+            q = q->next;
+        } while (q->next != p);
+        q->next = start;
+        last = q;
+        printf("Data Deleted = %d", p->data);
+        free(p);
+    }
 }
 void delete_at_given()
 {
+    printf("Enter the location = ");
+    scanf("%d", &loc);
+    if (start == NULL)
+    {
+        printf("Deletion cannot perform.");
+    }
+    else if (start->next == start)
+    {
+        if (loc == 1)
+        {
+            p = start;
+            q = last;
+            start = start->next;
+            q->next = start;
+            printf("Data Deleted = %d", p->data);
+            free(p);
+        }
+        else
+        {
+            printf("Deletion cannot perform.");
+        }
+    }
+    else
+    {
+        if (loc == 1)
+        {
+            p = start;
+            q = last;
+            start = start->next;
+            q->next = start;
+            printf("Data Deleted = %d", p->data);
+            free(p);
+        }
+        else
+        {
+            p = start;
+            i = 1;
+            do
+            {
+                q = p;
+                p = p->next;
+                i++;
+            } while (i < loc && p != start);
+            if (p != start && p->next == start)
+            {
+                q->next = start;
+                last = q;
+                printf("Data Deleted = %d", p->data);
+                free(p);
+            }
+            else
+            {
+                q->next = p->next;
+                printf("Data Deleted = %d", p->data);
+                free(p);
+            }
+        }
+    }
 }
 void traverse()
 {
