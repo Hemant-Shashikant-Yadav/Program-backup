@@ -231,7 +231,7 @@ void delete_at_given()
         {
             p = start;
             start = NULL;
-        last=NULL;
+            last=NULL;
             printf("Data deleted = %d", p->data);
             free(p);
         }
