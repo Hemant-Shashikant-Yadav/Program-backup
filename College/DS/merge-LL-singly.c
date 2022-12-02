@@ -63,17 +63,17 @@ void create(NODE *start, int num)
     p->data = num;
     if (start == NULL)
     {
-        p->next = start;
+        p->next = NULL;
         start = p;
     }
     else
     {
         q = start;
-        do
+        while (q->next != NULL)
         {
             q = q->next;
-        } while (q->next != start);
-        p->next = start;
+        }
+        p->next = NULL;
         q->next = p;
     }
 }
@@ -90,10 +90,10 @@ void traverse(NODE *start)
     else
     {
         q = start;
-        do
+        while (q != NULL)
         {
             printf("Data = %d\n", q->data);
             q = q->next;
-        } while (q != start);
+        }
     }
 }
