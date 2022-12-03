@@ -229,7 +229,7 @@ void delete_at_end()
             }
 
             q->next = NULL;
-            last = q; 
+            last = q;
             printf("Deleted data = %d", p->data);
             free(p);
         }
@@ -256,7 +256,7 @@ void delete_at_given()
         }
         else
         {
-            printf("Invalid location.");
+            printf("Invalid location.\nDeletion can't perform. !!!");
         }
     }
     else
@@ -293,6 +293,10 @@ void delete_at_given()
                 p->next->prev = q;
                 printf("Data deleted = %d", p->data);
                 free(p);
+            }
+            else
+            {
+                printf("Invalid location.\nDeletion can't perform. !!!");
             }
         }
     }

@@ -251,6 +251,10 @@ void delete_at_given()
                 printf("Data deleted = %d", p->data);
                 free(p);
             }
+            else
+            {
+                printf("Invalid location.\nDeletion can't perform !!!");
+            }
         }
     }
 }

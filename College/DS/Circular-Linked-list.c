@@ -137,21 +137,30 @@ void create_at_given()
         {
             q = start;
             i = 1;
-            do
+            if (i < loc - 1)
             {
-                q = q->next;
-                i++;
-            } while (i < loc - 1 && q != start);
+                do
+                {
+                    q = q->next;
+                    i++;
+                } while (i < loc - 1 && q != start);
+            }
+           
             if (q != start && q->next == start)
             {
                 p->next = start;
                 q->next = p;
                 last = p;
             }
-            else
+            else if (q != start)
             {
                 p->next = q->next;
                 q->next = p;
+            }
+            else
+            {
+                printf("Invalid location !!!");
+                free(p);
             }
         }
     }

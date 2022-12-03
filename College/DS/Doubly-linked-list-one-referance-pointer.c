@@ -207,7 +207,7 @@ void delete_at_end()
         if (start->next == NULL)
         {
             p = start;
-            start == NULL;
+            start = NULL;
             printf("Deleted data = %d", p->data);
             free(p);
         }
