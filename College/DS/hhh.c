@@ -11,7 +11,7 @@ typedef struct node NODE;
 NODE *start1 = NULL, *start2 = NULL, *start3 = NULL, *p, *q;
 int num;
 
-void create(NODE **head, int data1);
+int create( int data1);
 void traverse(NODE *start);
 void merge(NODE *p1, NODE *q2);
 
@@ -34,7 +34,7 @@ int main()
 			case 1:
 				printf("Enter the data = ");
 				scanf("%d", &num);
-				create(&start1, num);
+				start1 = create(num);
 				break;
 
 			case 2:
@@ -45,34 +45,33 @@ int main()
 		return 0;
 	}
 }
-void create(NODE **head, int data1)
+int create(int data1)
 {
+	NODE *start=NULL;
+	p = (NODE *)malloc(sizeof(NODE));
+	p->data = data1;
 
-	// p = (NODE *)malloc(sizeof(NODE));
-	// p->data = data1;
-
-	// // if (start == NULL)
-	// // {
-	// // 	p->next = NULL;
-	// // 	start = p;
-	// // }
-	// // else
-	// // {
-	// // 	q = start;
-	// // 	while (q->next != NULL)
-	// // 	{
-	// // 		q = q->next;
-	// // 	}
-	// // 	p->next = NULL;
-	// // 	q->next = p;
-	// // }
-	// p->next=*start;
-	// *start=p;
-	// // return *start;
-	NODE *newNode = (NODE*)malloc(sizeof(NODE));
-	newNode->data = data1;
-	newNode->next = *head;
-	*head = newNode;
+	if (start == NULL)
+	{
+		p->next = NULL;
+		start = p;
+	}
+	else
+	{
+		q = start;
+		while (q->next != NULL)
+		{
+			q = q->next;
+		}
+		p->next = NULL;
+		q->next = p;
+	}
+	
+	// NODE *newNode = (NODE *)malloc(sizeof(NODE));
+	// newNode->data = data1;
+	// newNode->next = head->next;
+	// head = newNode;
+	return start;
 }
 void traverse(NODE *start)
 {
