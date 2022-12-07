@@ -1,5 +1,12 @@
-tart == NULL)
+ // q = start;
+    // while (q->next != NULL)
     // {
-    //     printf("L L is empty!!!");
+    //     if (q->data == q->next->data)
+    //     {
+    //         q->next = q->next->next;
+    //     }
+    //     else
+    //     {
+    //         q = q->next;
+    //     }
     // }
-    // else
