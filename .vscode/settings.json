@@ -46,5 +46,6 @@
         "stdio.h": "c",
         "string.h": "c",
         "valarray": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
