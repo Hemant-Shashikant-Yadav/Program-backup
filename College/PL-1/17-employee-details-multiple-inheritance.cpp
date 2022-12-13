@@ -53,6 +53,8 @@ void Depaertment::getdata2()
 
 void DisplayData::operation()
 {
+    getdata1();
+    getdata2();
     cout << "Name of employee = " << Name << endl;
     cout << "Gender of employee = " << gender << endl;
     cout << "Id of employee = " << Id << endl;
@@ -64,8 +66,6 @@ void DisplayData::operation()
 int main()
 {
     DisplayData d;
-    d.getdata1();
-    d.getdata2();
     d.operation();
     return 0;
 }
