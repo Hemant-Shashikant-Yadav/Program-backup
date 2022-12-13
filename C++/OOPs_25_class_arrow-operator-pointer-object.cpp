@@ -31,6 +31,7 @@ int main()
     // (ptr)->get_data();
 
     complex *ptr = new complex;
+    // complex *ptr = new complex[5];  Array of 5 object. Which points to first object.
     ptr->set_data();
     ptr->get_data();
     return 0;
