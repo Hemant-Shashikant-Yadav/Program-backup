@@ -5,7 +5,7 @@ void input(int *a, int n)
 
     while (i < n)
     {
-        scanf("%d", (x + i));
+        scanf("%d", (a + i));
         i++;
     }
 }
@@ -16,7 +16,7 @@ void display(int *a, int n)
 
     while (i < n)
     {
-        printf("%4d", (x + i));
+        printf("%4d", *(a + i));
         i++;
     }
 }
@@ -51,7 +51,7 @@ int findminpos(int *a, int n)
     int npos = 0, i = 1;
     while (i < n)
     {
-        if (a[i] < a[xpos])
+        if (a[i] < a[npos])
         {
             npos = i;
         }

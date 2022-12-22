@@ -17,12 +17,14 @@ int main()
 }
 // void display(char a[])
 // {
+//     printf("String = ");
 //     puts(a);
 // }
 
 void display(char a[])
 {
     int i = 0;
+    printf("String = ");
     while (a[i] != '\0')
     {
         printf("%c", a[i]);
