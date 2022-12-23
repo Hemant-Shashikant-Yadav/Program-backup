@@ -13,7 +13,7 @@ int main()
     }
 
     printf("Data = ");
-    for (i = 0; i < count; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%4d", x[i]);
     }
