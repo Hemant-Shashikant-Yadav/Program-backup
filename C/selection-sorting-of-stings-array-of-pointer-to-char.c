@@ -7,7 +7,7 @@ int main()
 
     char p[40];
     char *q[5];
-    int i = 0, n, pos, r,j;
+    int i = 0, n, pos, r, j;
 
     while (i < 5)
     {

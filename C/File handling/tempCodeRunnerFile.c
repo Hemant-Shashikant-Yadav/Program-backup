@@ -1,0 +1,2 @@
+
+    FILE *ptr = NULL;
