@@ -18,13 +18,17 @@ int main()
 
     // putc('H', filePtr);
     // fputs("\nHello my name is HY\n",filePtr);
-   
+
     // 3.
     // filePtr = fopen("file4.txt", "a");
 
     // putc('H', filePtr);
     // fputs("\n1Hello my name is HY\n",filePtr);
 
-        
+    // if (file1Ptr == NULL)
+    // {
+    //     ptintf("File doesnt exist !!!");
+    // }
+
     return 0;
 }
