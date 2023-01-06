@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int bal = 0;
 FILE *file1Ptr = NULL;
 void Add_money();
 void Add_expence();
 void View_balance();
 void Last_expence();
 void Reset_file();
-int bal = 0;
 
 int main()
 {
     int opt;
 
+    // here an infinte running while loop is created.
+    // This loop whil terminate only when the termation condition (6.Exit) is given by user.
     while (1)
     {
 
-        printf("\n\nHello !!!\n1.Add money\n2.Add expence\n3.View balance\n4.Last expences\n5.Reset file\n6.Exit.\nChoose option = ");
+        printf("\n\nHello !!!\nThis is a money management project.\n1.Add money\n2.Add expence\n3.View balance\n4.Last expences\n5.Reset file\n6.Exit.\nChoose option = ");
         scanf("%d", &opt);
 
         if (opt == 6)
@@ -51,16 +53,18 @@ int main()
     }
     return 0;
 }
+
+// This function add the money into your account.
 void Add_money()
 {
     system("cls");
 
-    int temp ;
+    int temp;
     char s[100];
     int a = 0;
     int i = 0;
     char c;
-   
+
     file1Ptr = fopen("file1.txt", "a");
     fclose(file1Ptr);
 
@@ -71,13 +75,13 @@ void Add_money()
     {
         file1Ptr = fopen("file1.txt", "r");
         fscanf(file1Ptr, "%s", s);
-        
+
         while (s[i] != '\0')
         {
             a = (a * 10) + (s[i] - 48);
             i++;
         }
-   
+
         fclose(file1Ptr);
     }
     bal = a;
@@ -155,7 +159,6 @@ void View_balance()
 {
     system("cls");
     file1Ptr = fopen("file1.txt", "r");
-
 
     char a[50];
     fscanf(file1Ptr, "%s", a);
