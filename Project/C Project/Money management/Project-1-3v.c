@@ -152,7 +152,7 @@ void Add_expence()
         fscanf(file1Ptr, "%s", c);
         fclose(file1Ptr);
 
-        printf("\nReamaining balance is = %s", c);
+        printf("\n\nReamaining balance is = %s", c);
     }
 }
 void View_balance()
