@@ -1,6 +1,20 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch bassic_print",
+            "request": "launch",
+            "mainClass": "bassic_print",
+            "projectName": "Codes_4ae8473e"
+        },
+        {
+            "type": "java",
+            "name": "Launch basicOutput",
+            "request": "launch",
+            "mainClass": "basicOutput",
+            "projectName": "Codes_4ae8473e"
+        },
+        {
             "name": "C/C++: cpp.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
