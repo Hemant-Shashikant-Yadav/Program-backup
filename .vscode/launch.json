@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch basic_pattern",
+            "request": "launch",
+            "mainClass": "basic_pattern",
+            "projectName": "Codes_4ae8473e"
+        },
+        {
+            "type": "java",
             "name": "Launch bassic_print",
             "request": "launch",
             "mainClass": "bassic_print",
