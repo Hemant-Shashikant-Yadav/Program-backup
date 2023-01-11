@@ -24,7 +24,7 @@ new_file.open(“newfile.txt”, ios::out);
 new_file.fclose()
 */
 
-
+  
 // Default Open Modes :
 
 // ifstream ios::in

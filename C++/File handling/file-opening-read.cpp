@@ -47,7 +47,7 @@ using namespace std;
 //     {
 //         cout << "No such file";
 //     }
-//     else
+//     else 
 //     {
 //         char ch;
 //         while (!new_file.eof())
