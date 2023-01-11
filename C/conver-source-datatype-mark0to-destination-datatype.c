@@ -18,6 +18,9 @@ typedef struct result
 } RESULT;
 
 void input(MARKS *t);
+void displayM(MARKS *t);
+void display(RESULT *t);
+void convert(RESULT *r, MARKS *m);
 
 int main()
 {
@@ -25,8 +28,8 @@ int main()
     RESULT Q;
 
     input(&P);
-    display(&P);
-    convert(% Q, % P);
+    displayM(&P);
+    convert(&Q, &P);
     display(&Q);
 
     return 0;
@@ -48,4 +51,44 @@ void input(MARKS *t)
         i++;
         /* code */
     }
+}
+void displayM(MARKS *t)
+{
+    int i = 0;
+    printf("Roll no = %d\n", t->rollNo);
+
+    printf("Marks = \n");
+
+    while (i < t->noOfSub)
+    {
+        printf("%4d", *(t->ptr + i));
+        i++;
+        /* code */
+    }
+}
+
+void display(RESULT *t)
+{
+    int i = 0;
+    printf("Roll no = %d\n", t->rollNo);
+    printf("Total marks = %d\n", t->total);
+    printf("Average marks = %d\n", t->average);
+}
+
+void convert(RESULT *r, MARKS *m)
+{
+    int i = 0;
+
+    r->rollNo = m->rollNo;
+
+    r->total = 0;
+
+    while (i < m->noOfSub)
+    {
+        r->total += *(m->ptr + i);
+        i++;
+        /* code */
+    }
+
+    r->average = (float)(r->total / m->noOfSub);
 }
