@@ -8,7 +8,7 @@ int main()
     char ch;
 
     char ch;
-    fp1 = fopen("abc.txt", "w");
+    fp1 = fopen("abc.txt", "r");
 
     if (fp1 == NULL)
     {

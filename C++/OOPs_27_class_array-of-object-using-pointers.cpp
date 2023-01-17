@@ -40,12 +40,12 @@ int main()
         ptr->set_data(a, b);
         ptr++;
     }
-
+    ptr= ptr - 3;
     for (i = 0; i < size; i++)
     {
         cout << "Item number " << i + 1 << " = ";
-        tempPtr->get_data();
-        tempPtr++;
+        ptr->get_data();
+        ptr++;
     }
 
     return 0;
