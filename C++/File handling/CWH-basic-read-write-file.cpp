@@ -39,12 +39,12 @@ int main()
     // in1 >> data;
     // cout << data << endl;
 
-    // string data1;
+    // string data1;  
     // getline(in1, data1);
     // cout << data1 << endl;
 
     // in1.close();
-
+ 
     ifstream in1("file1.txt");
     string str;
 

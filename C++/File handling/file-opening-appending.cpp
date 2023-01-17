@@ -3,9 +3,9 @@
 #include <fstream>
 
 using namespace std;
-
+  
 int main()
-{
+{    
     fstream fileptr; 
     double a = 100.0455, b;
     fileptr.open("new_file_append.txt", ios::app);
