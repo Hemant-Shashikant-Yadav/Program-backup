@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<h1>This is Form</h1>
+<hr>
+
+<!-- id == unique identifire (roll no)-->
+<!-- class == group of inputs  (batch)-->
+<!-- same name -
+    1.in radio only one among the two or more can be cheked
+    2. in checkbox  all the input represent inly one name -->
+
+<body>
+    <header>
+        <h2>Student information form</h2>
+    </header>
+    <hr>
+    <main>
+        <form action="form.php">
+            <b>
+                <p>Enter your name.</p>
+            </b>
+            <input type="text" placeholder="Enter a text here">
+            <br>
+
+            <b>
+                <p>Enter your Gender.</p>
+            </b>
+            <label for="gender male">
+                <input type="radio" name="gender" id="gender male"> Male
+            </label>
+            <label for="gender female">
+                <input type="radio" name="gender" id="gender female"> Female
+            </label>
+            <label for="gender other">
+                <input type="radio" name="gender" id="gender other"> Other
+            </label>
+            <br>
+
+            <b>
+                <p>Check the subjects you link.</p>
+            </b>
+            <label for="PA">
+                <input type="checkbox" name="subject" id="PA"> Processor Architecture
+            </label>
+            <br>
+            <label for="se">
+                <input type="checkbox" name="subject" id="se"> Software Engineering
+            </label>
+            <br>
+            <label for="cn">
+                <input type="checkbox" name="subject" id="cn"> Computer network
+            </label>
+            <br>
+            <label for="pl">
+                <input type="checkbox" name="subject" id="pl"> Programing Laboratory
+            </label>
+            <br>
+            <label for="ds">
+                <input type="checkbox" name="subject" id="ds"> Data structures
+            </label>
+            <br>
+            <label for="dm">
+                <input type="checkbox" name="subject" id="dm"> Descrete mathematics
+            </label>
+            <br>
+
+            <b>
+                <p>
+                    Give brief information about you.
+                </p>
+            </b>
+            <label for="text">
+                <textarea name="Explaination " id="text" cols="30" rows="10" placeholder="Type about you."></textarea>
+            </label>
+
+            <b>
+                <p>
+                    Choose your department.
+                </p>
+                <label for="depatrment">
+                    <select name="name of depatment" id="depatment">
+                        <option value="No-dept">Select the department</option>
+                        <option value="CSE">CSE department</option>
+                        <option value="Civil">Civil department</option>
+                        <option value="Mech">Mech department</option>
+                        <option value="Aero">Aero department</option>
+                        <option value="AIDS">AIDS department</option>
+                        <option value="iot">IoT department</option>
+                        <option value="Food">Food department</option>
+                        <option value="Basic">Basic science department</option>
+                    </select>
+                </label>
+            </b>
+
+
+        </form>
+
+    </main>
+    <hr>
+    <footer>
+        <p>Websit made by Hemant Shashikant Yadav</p>
+    </footer>
+
+</body>
+
+</html>
