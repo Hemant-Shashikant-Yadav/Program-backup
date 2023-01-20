@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.box1
+{
+    margin: 2px;
+    padding: 2px;
+    border: 3px solid black;
+    /* box-sizing:; */
+}
+.box2
+{
+    margin: 29px;
+    padding: 59px;
+    border: 3px dotted rgb(255, 0, 0);
+    /* box-sizing:content-box;*/
+    /* width: 1500px;  */
+    box-sizing: border-box;
+}
+.para
+{
+    border: 7px solid blue;
+    margin: 5% 15% 0% 15%;
+    height: 1000px;
+}

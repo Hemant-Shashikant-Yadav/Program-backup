@@ -1,0 +1,28 @@
+.italic {
+  font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.red {
+    color: red;
+    background-color: yellow;
+}
+
+.font {
+}
+
+.blue {
+    color: blue;
+    background-color: rgba(105, 255, 222, 0.514);
+}
+
+.yellow {
+    color: yellow;
+    background-color: rgba(174, 46, 212, 0.808);
+}
+*{
+
+}

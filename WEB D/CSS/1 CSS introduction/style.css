@@ -1,0 +1,48 @@
+#one{
+    background-color: yellowgreen;
+    border: 20px black;
+    border-width: 20px;
+    border: 2px solid black;
+}
+
+#two
+{
+    background-color: violet;
+    border: 2px solid black;
+}
+h1
+{
+    text-align: center;
+    color: brown;
+    background-color: antiquewhite;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+body
+{
+    margin: 1px;
+    padding: 5px;
+    background-color:tan;
+    border: 5px black;
+    border-style:double;
+}
+main
+{
+    color: blue;
+    border: 5px  black;
+    padding: 5px;
+    border-style:dotted;
+}
+
+.blue_color
+{
+    padding: 5px;
+    background-color: aqua;
+    color: blue;
+    border: 2px solid black;
+}
+/* *{
+    padding: 0%;
+    margin: 0%;
+} */
+

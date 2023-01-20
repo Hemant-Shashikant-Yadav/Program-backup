@@ -1,0 +1,36 @@
+.page {
+  background-color: antiquewhite;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.heading {
+  background-color: rgb(3, 4, 80);
+  color: rgb(255, 255, 255);
+  border: 5px solid aqua;
+  margin-top: 0%;
+  padding: 1%;
+  font-size: 35px;
+}
+.para {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 25px;
+  font-style: oblique;
+}
+.Background {
+  border: 5px solid rgb(255, 0, 0);
+  color: rgba(231, 208, 75, 0.863);
+  padding-left: 2%;
+  padding-right: 2%;
+  background-image: url("7033529.jpg");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+body {
+  background-repeat: no-repeat;
+  background-image: url("7033529.jpg");
+  /* background-color: black; */
+}
