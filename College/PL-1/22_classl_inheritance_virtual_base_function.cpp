@@ -60,14 +60,14 @@ int main()
     degree_to_f d(100.0);
 
     b = &l;
-    cout <<"The value enterd in liters is  = " b->display_input() << endl;
+    cout <<"The value entered in liters is  = "<< b->display_input() << endl;
     b->convert();
-    cout << b->display_output() << endl;
+    cout <<"The value in gallons is  = "<<  b->display_output() << endl;
 
     b = &d;
-    cout << b->display_input() << endl;
+    cout <<"The value entered in degree is  = "<<  b->display_input() << endl;
     b->convert();
-    cout << b->display_output() << endl;
+    cout <<"The value in faranhite is  = "<<  b->display_output() << endl;
 
     return 0;
 }
