@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.box1 {
+  background-color: blue;
+  width: 50vw;
+  /* display: inline-block; */
+}
+.box2 {
+  background-color: red;
+  width: 50vw;
+  min-width: 70vw;
+  /* display: inline-block; */
+}

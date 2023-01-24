@@ -1,1 +1,0 @@
-{"name":"Local: Equalize_AB","url":"h:\\Coding\\Codes\\exercise\\Equalize_AB.cpp","tests":[{"id":1664032368145,"input":"4\n5 7 1\n3 4 2\n4 4 6\n2 5 3","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\exercise\\Equalize_AB.cpp","group":"local","local":true}

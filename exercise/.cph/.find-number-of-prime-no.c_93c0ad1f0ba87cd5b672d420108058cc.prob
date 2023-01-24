@@ -1,1 +1,0 @@
-{"name":"Local: find-number-of-prime-no","url":"h:\\Coding\\Codes\\exercise\\find-number-of-prime-no.c","tests":[{"id":1657031441225,"input":"1 \n10","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\exercise\\find-number-of-prime-no.c","group":"local","local":true}

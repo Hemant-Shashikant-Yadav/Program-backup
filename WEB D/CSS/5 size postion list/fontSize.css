@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  font-size: 30px;
+}
+
+.box {
+  /* font-size: 20px; */
+  /* font-size: 3em; */ /*(3*container font size)*/
+  font-size: 3rem; /*(3*html font size)*/
+}
+
+.html {
+  font-size: 15px;
+}

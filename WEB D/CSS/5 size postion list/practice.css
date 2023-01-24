@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  padding: 1.25rem;
+  color: wheat;
+}
+
+.navbar {
+  color: white;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+.navbar li {
+  padding: 3px;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline;
+  border: 2px solid yellow;
+}
+
+body {
+  height: 2000px;
+}
