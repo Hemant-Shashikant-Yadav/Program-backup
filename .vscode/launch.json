@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch age_if_else",
+            "request": "launch",
+            "mainClass": "age_if_else",
+            "projectName": "Codes_4ae8473e"
+        },
+        {
+            "type": "java",
             "name": "Launch basic_pattern",
             "request": "launch",
             "mainClass": "basic_pattern",

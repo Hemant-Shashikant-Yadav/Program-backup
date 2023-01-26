@@ -13,5 +13,7 @@ public class product_of_two_num_input {
         int product = a *b;
 
         System.out.println("Product = " + product);
+    
+    scanData.close();
     }
 }

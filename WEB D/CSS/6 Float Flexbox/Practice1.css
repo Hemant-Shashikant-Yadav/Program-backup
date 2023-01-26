@@ -1,35 +1,39 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-header{
-    height: 80px;
-    background-color: black;
-    color: wheat;
+header {
+  height: 80px;
+  background-color: black;
+  color: wheat;
 }
 
-header li{
-    display: inline;
-    padding: 10px;
+header li {
+  display: inline-block;
+  padding: 10px;
 }
 
-.continer{
-    display: flex;
-justify-content: space-between;
+.continer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.box1{
+.box1 {
+  height: 60vh;
+  width: 35vw;
+  background-color: red;
+}
+.box2 {
     height: 60vh;
-    width: 35vw;
-    background-color: red;
+  width: 35vw;
+  background-color: aqua;
+}
+.img {
+  display: inline-block;
+  height: 70px;
+}
 
-}
-.box2{
-    height: 60vh;
-    width: 35vw;
-    background-color: aqua;
-}
-.img{
-image-resolution: 5px;
+.navbar {
+  display: inline-block;
 }

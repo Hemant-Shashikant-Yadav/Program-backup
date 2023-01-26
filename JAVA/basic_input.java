@@ -35,6 +35,8 @@ public class basic_input {
         } else {
             System.out.println("You can't drive a car.");
         }
+    
+        scanData.close();
     }
 
 }

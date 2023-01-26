@@ -35,6 +35,6 @@ public class type_conversion {
         // error
         // int v = scan.nextFloat();
         // System.out.println(v);
+        scan.close();
     }
-
 }

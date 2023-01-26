@@ -13,5 +13,7 @@ public class addition_of_two_number_input {
         int sum = a + b;
 
         System.out.println("Sum = " + sum);
+    
+        scanData.close();
     }
 }
