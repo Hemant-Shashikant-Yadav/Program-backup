@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch addition_function_with_arguments_with_return",
+            "request": "launch",
+            "mainClass": "addition_function_with_arguments_with_return",
+            "projectName": "Codes_4ae8473e"
+        },
+        {
+            "type": "java",
             "name": "Launch age_if_else",
             "request": "launch",
             "mainClass": "age_if_else",
