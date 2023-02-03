@@ -5,23 +5,18 @@ void dequeue();
 void traverse();
 int front = -1;
 int rear = -1;
-int size;
-int queue[] = {0};
+int size = 5;
+int queue[5] = {0};
 
 int main()
 {
 
-    printf("Enter the size of queue = ");
-    scanf("%d", &size);
-
-    queue[size];
-
     int ch;
     while (1)
     {
-        printf("\n\nHII\n1.Enqueue\n2.Dequeue\n3.Traversre\n4.Change size of queue\n5.Exit\nEnter the choice = ");
+        printf("\n\nHII\n1.Enqueue\n2.Dequeue\n3.Traversre\n4.Exit\nEnter the choice = ");
         scanf("%d", &ch);
-        if (ch == 5)
+        if (ch == 4)
         {
             break;
         }
@@ -38,12 +33,6 @@ int main()
             case 3:
                 traverse();
                 break;
-            case 4:
-                printf("Enter the new size of queue = ");
-                scanf("%d", &size);
-                queue[0];
-                queue[size];
-                break;
 
             default:
                 printf("You entered wrong choice !!!");
@@ -55,24 +44,24 @@ int main()
 }
 void enqueue()
 {
-    rear++;
-    if (rear == size-1)
+    if (rear == size - 1)
     {
         printf("Queue overflow !!!");
-        rear--;
         /* code */
     }
     else
     {
         if (front == -1)
         {
-            front=0;
+            front = 0;
+            rear++;
             printf("Enter element  = ");
             scanf("%d", &queue[rear]);
             /* code */
         }
         else
         {
+            rear++;
             printf("Enter element  = ");
             scanf("%d", &queue[rear]);
             /* code */
@@ -88,7 +77,7 @@ void dequeue()
     }
     else
     {
-        if (front == size )
+        if (front == size)
         {
             printf("Queue underflow !!!");
             front--;
@@ -112,7 +101,7 @@ void traverse()
     {
         printf("Data = ");
         int fronttemp = front;
-        while (fronttemp == rear + 1)
+        while (fronttemp == rear)
         {
             printf("%4d", queue[fronttemp]);
             fronttemp++;
