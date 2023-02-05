@@ -1,3 +1,8 @@
+/*
+Name = Hemant Shashikant Yadav
+Roll no = 2102
+URN = 21031035
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
