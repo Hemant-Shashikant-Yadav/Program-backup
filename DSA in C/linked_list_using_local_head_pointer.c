@@ -19,7 +19,37 @@ NODE *Create_Node(int data)
 // function to retrive last node
 NODE *Get_Last_Node(NODE **T)
 {
+    NODE *a = *T;
+    while (a->next != NULL)
+    {
+        a = a->next;
+    }
+    return a;
 }
+
+// Funtion to display list data
+void Display(NODE **T)
+{
+    NODE *a = *T;
+
+    if (a == NULL)
+    {
+        printf("List is empty\n");
+    }
+    else
+    {
+        printf("List data = ");
+        while (a != NULL)
+        {
+            printf("%4d", a->data);
+            a = a->next;
+        }
+    }
+}
+
+// Funtion to add new node at end
+
+
 int main()
 {
 
