@@ -15,6 +15,11 @@ NODE *Create_Node(int data)
     a->next = NULL;
     return a;
 }
+
+// function to retrive last node
+NODE *Get_Last_Node(NODE **T)
+{
+}
 int main()
 {
 
