@@ -74,6 +74,39 @@ void ADD_Begining(NODE **T, int data)
 
 int main()
 {
+    NODE *St = NULL;
+    int Option, Data;
+
+    while (1)
+    {
+        printf("\vLinked list menu:\n1.Add at end.\n2.Add at begining.\n3.Display\n4.Exit\nSelect option = ");
+        scanf("%d", &Option);
+
+        if (Option > 3)
+        {
+            break;
+        }
+        switch (Option)
+        {
+        case 1:
+            printf("Add data at end = ");
+            scanf("%d", &Data);
+            ADD_End(&St, Data);
+            break;
+        case 2:
+            printf("Add data at begining = ");
+            scanf("%d", &Data);
+            ADD_Begining(&St, Data);
+            break;
+
+        case 3:
+            Display(&St);
+            break;
+
+        default:
+            break;
+        }
+    }
 
     return 0;
 }
