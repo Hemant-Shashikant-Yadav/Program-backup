@@ -48,7 +48,29 @@ void Display(NODE **T)
 }
 
 // Funtion to add new node at end
+void ADD_End(NODE **T, int data)
+{
+    NODE *a, *b;
+    if (*T == NULL)
+    {
+        *T = Create_Node(data);
+    }
+    else
+    {
+        b = Get_Last_Node(T);
+        a = Create_Node(data);
+        b->next = a;
+    }
+}
+// Funtion to add new node at begining
+void ADD_Begining(NODE **T, int data)
+{
+    NODE *a = *T, *b;
 
+    b = Create_Node(data);
+    b->next = a;
+    *T = b;
+}
 
 int main()
 {
