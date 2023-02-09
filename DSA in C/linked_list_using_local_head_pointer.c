@@ -12,7 +12,8 @@ NODE *Create_Node(int data)
     NODE *a;
     a = (NODE *)malloc(sizeof(NODE));
     a->data = data;
-    a->next = NULL
+    a->next = NULL;
+    return a;
 }
 int main()
 {
