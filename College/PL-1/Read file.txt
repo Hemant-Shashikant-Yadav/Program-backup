@@ -1,0 +1,3 @@
+Hello All,
+I am learning file handling in cpp.
+It a good experience.
