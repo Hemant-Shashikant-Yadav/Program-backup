@@ -1,3 +1,5 @@
+package operator;
+
 import java.util.Scanner;
 
 public class encrypting_grades {
