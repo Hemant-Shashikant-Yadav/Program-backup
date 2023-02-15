@@ -1,3 +1,5 @@
+package operator;
+
 public class arithmetic_operators {
     public static void main(String[] args) {
         int a = 100;
