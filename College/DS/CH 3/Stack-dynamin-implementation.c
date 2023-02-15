@@ -118,6 +118,6 @@ void Traverse()
     }
 }
 void TopOfStack()
-{
+{top
     printf("Top of stack = %d", top->data);
 }
