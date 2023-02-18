@@ -269,6 +269,115 @@ void Delete_All(SLIST *T)
     return;
 }
 
+void Delete_Given(SLIST *T, int Pos)
+{
+    int i = 1;
+    NODE *a, *b, *c;
+
+    if (T->Count == 0)
+    {
+        return;
+    }
+    if (Pos < 1 || Pos > T->Count)
+    {
+        printf("No such node exist");
+        return;
+    }
+    if (Pos == 1)
+    {
+        Delete_First(T);
+    }
+    else
+    {
+        if (Pos == T->St)
+        {
+            Delete_Last(T);
+        }
+        else
+        {
+            b = T->St;
+            while (i < Pos)
+            {
+                a = b;
+                b = b->Next;
+                i++;
+            }
+            c = b->Next;
+            a->Next = c;
+            free(b);
+            T->Count--;
+        }
+    }
+}
+void Add_Given_Before(SLIST *T, int Pos, int Data)
+{
+    int i = 1;
+    NODE *a, *b, *c;
+
+    if (T->Count == 0)
+    {
+        return;
+    }
+    if (Pos < 1 || Pos > T->Count)
+    {
+        printf("No such node exist");
+        return;
+    }
+    if (Pos == 1)
+    {
+        ADD_Begining(T, Data);
+    }
+    else
+    {
+
+        a = T->St;
+        while (i < Pos)
+        {
+            b = a;
+            a = a->Next;
+            i++;
+        }
+        c = Create_Node(Data);
+        b->Next = c;
+        c->Next = a;
+        T->Count++;
+    }
+}
+void Add_Given_After(SLIST *T, int Pos, int Data)
+{
+    int i = 1;
+    NODE *a, *b, *c;
+
+    if (T->Count == 0)
+    {
+        return;
+    }
+    if (Pos < 1 || Pos > T->Count)
+    {
+        printf("No such node exist");
+        return;
+    }
+    if (Pos == T->Count)
+    {
+        ADD_End(T, Data);
+    }
+    else
+    {
+
+        a = T->St;
+        while (i <= Pos)
+        {
+            b = a;
+            a = a->Next;
+            i++;
+        }
+        c = Create_Node(Data);
+        b->Next = c;
+        c->Next = a;
+        T->Count++;
+    }
+}
+
 int main()
 {
 
