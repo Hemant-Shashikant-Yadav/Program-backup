@@ -24,5 +24,6 @@ test::~test()
 int main()
 {
     test t;
+    
     return 0;
 }

@@ -378,8 +378,149 @@ void Add_Given_After(SLIST *T, int Pos, int Data)
     }
 }
 
+// function to searach value frim the list
+int search(SLIST *T, int Data)
+{
+    NODE *a = T->St;
+
+    while (a != NULL)
+    {
+        if (a->Data == Data)
+        {
+            break;
+        }
+        a = a->Next;
+        /* code */
+    }
+    if (a == NULL)
+    {
+        return 0;
+        /* code */
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+void Replace_search(SLIST *T, int search, int replace)
+{
+    NODE *a = T->St;
+    while (a != NULL)
+    {
+        if (a->Data == search)
+        {
+            a->Data = replace;
+        }
+        a = a->Next;
+    }
+}
 int main()
 {
+    SLIST P;
+    int opt, Result, Data, Search, Replace;
+    init(&P);
+
+    while (1)
+    {
+        printf("\vLinked list menu:\n1.Add at end.\n2.Add at begining.\n3.Display\n4.Count.\n5.Total\n6.Average data.\n7.Min value.\n8.Max value\n9.Count odd data nodes.\n10.Count even data nodes.\n11.Delete First.\n12.Delete Last.\n13.Delete all.\n14.Delete i'th node\n15.Insert before\n16.Insert after\n17.Search\n18.Find replace\n19.Exit\nSelect option = ");
+        scanf("%d", &opt);
+
+        if (opt > 18)
+        {
+            break;
+        }
+        switch (opt)
+        {
+        case 1:
+            printf("Add data at end = ");
+            scanf("%d", &Data);
+            Add_End(&P, Data);
+            break;
+        case 2:
+            printf("Add data at begining = ");
+            scanf("%d", &Data);
+            Add_Begining(&P, Data);
+            break;
+
+        case 3:
+            Display(&P);
+            break;
+        case 4:
+            printf("The number of nodes are = %d\n", P.Count);
+            break;
+        case 5:
+            printf("The total is = %d\n", Total(&P));
+            break;
+        case 6:
+            printf("The average is = %d\n", Total(&P) / P.Count);
+            break;
+        case 7:
+            printf("The min data = %d\n", Min_data(&P));
+            break;
+        case 8:
+            printf("The max data = %d\n", Max_data(&P));
+            break;
+        case 9:
+            printf("The number of odd data nodes are = %d\n", Odd_Count(&P));
+            break;
+        case 10:
+            printf("The number of eve data nodes are = %d\n", Even_Count(&P));
+            break;
+        case 11:
+            Delete_First(&P);
+            break;
+        case 12:
+            Delete_Last(&P);
+            break;
+        case 13:
+            Delete_All(&P);
+            break;
+        case 14:
+            printf("Enter node position to be deleted = ");
+            scanf("%d", &Replace);
+            Delete_Given(&P, Replace);
+            break;
+        case 15:
+            printf("Enter node position to be insreted before = ");
+            scanf("%d", &Replace);
+            printf("The data = ");
+            scanf("%d", &Data);
+            Add_Given_Before(&P, Replace, Data);
+            break;
+        case 16:
+            printf("Enter node position to be insreted after = ");
+            scanf("%d", &Replace);
+            printf("The data = ");
+            scanf("%d", &Data);
+            Add_Given_After(&P, Replace, Data);
+            break;
+        case 17:
+            printf("Enter search value = ");
+            scanf("%d", &Search);
+
+            if (search(&P, Search == 0))
+            {
+                printf("Not found.");
+            }
+            else
+            {
+                printf("Found");
+            }
+
+            break;
+        case 18:
+            printf("Enter node position to be insreted after = ");
+            scanf("%d", &Replace);
+            printf("The data = ");
+            scanf("%d", &Search);
+            Replace_search(&P, Search, Replace);
+            break;
+
+        default:
+            break;
+        }
+    }
 
     return 0;
 }

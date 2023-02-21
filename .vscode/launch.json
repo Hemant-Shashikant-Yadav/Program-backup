@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch area_of_circle_input_radius",
+            "request": "launch",
+            "mainClass": "area_of_circle_input_radius",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "Launch addition_function_with_arguments_with_return",
             "request": "launch",
             "mainClass": "addition_function_with_arguments_with_return",
