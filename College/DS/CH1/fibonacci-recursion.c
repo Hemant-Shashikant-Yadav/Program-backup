@@ -24,7 +24,7 @@ int main()
     while (i<n)
     {
         a=Fibo(i);
-        printf("%d ",i);
+        printf("%d ",a);
         i++;
     }
     

@@ -48,6 +48,7 @@ void ADD_End(SLIST *T, int Data)
 {
     NODE *a, *b;
     a = Create_Node(Data);
+    T->Count++;
 
     if (T->St == NULL)
     {
@@ -147,29 +148,12 @@ int Even_Count(SLIST *T)
 // Function to find maximum data from the list
 int Max_data(SLIST *T)
 {
-    // NODE *a;
-    // int Max = 0;
-    // a = T->St;
-
-    // while (a != NULL)
-    // {
-    //     if (a->Data > Max)
-    //     {
-    //         Max = a->Data;
-    //     }
-
-    //     a = a->Next;
-    // }
-
-    // return Max;
-
     NODE *a;
+    int Max = 0;
     a = T->St;
-    int Max = a->Data;
 
-    for (a = a->Next; a != NULL; a = a->Next)
+    while (a != NULL)
     {
-
         if (a->Data > Max)
         {
             Max = a->Data;
@@ -179,32 +163,32 @@ int Max_data(SLIST *T)
     }
 
     return Max;
-}
-int Min_data(SLIST *T)
-{
-    // NODE *a;
-    // int Min = 0;
-    // a = T->St;
 
-    // while (a != NULL)
+    // NODE *a;
+    // a = T->St;
+    // int Max = a->Data;
+
+    // for (a = a->Next; a != NULL; a = a->Next)
     // {
-    //     if (a->Data < Min)
+
+    //     if (a->Data > Max)
     //     {
-    //         Min = a->Data;
+    //         Max = a->Data;
     //     }
 
     //     a = a->Next;
     // }
 
-    // return Min;
-
+    // return Max;
+}
+int Min_data(SLIST *T)
+{
     NODE *a;
+    int Min = __INT_MAX__;
     a = T->St;
-    int Min = a->Data;
 
-    for (a = a->Next; a != NULL; a = a->Next)
+    while (a != NULL)
     {
-
         if (a->Data < Min)
         {
             Min = a->Data;
@@ -214,6 +198,23 @@ int Min_data(SLIST *T)
     }
 
     return Min;
+
+    // NODE *a;
+    // a = T->St;
+    // int Min = a->Data;
+
+    // for (a = a->Next; a != NULL; a = a->Next)
+    // {
+
+    //     if (a->Data < Min)
+    //     {
+    //         Min = a->Data;
+    //     }
+
+    //     a = a->Next;
+    // }
+
+    // return Min;
 }
 
 void Delete_First(SLIST *T)
@@ -245,7 +246,7 @@ void Delete_Last(SLIST *T)
         while (A->Next != NULL)
         {
             B = A;
-            A->Next;
+            A = A->Next;
         }
         B->Next = NULL;
     }
@@ -256,13 +257,13 @@ void Delete_Last(SLIST *T)
 
 void Delete_All(SLIST *T)
 {
-    NODE *a, *b;
+    NODE *a = T->St, *b;
 
     while (a != NULL)
     {
         b = a;
-        a->Next;
-        free(a);
+        a = a->Next;
+        free(b);
     }
     T->St = NULL;
     T->Count = 0;
@@ -419,7 +420,8 @@ int main()
 {
     SLIST P;
     int opt, Result, Data, Search, Replace;
-    init(&P);
+    // init(&P);
+    Initiate(&P);
 
     while (1)
     {
@@ -435,12 +437,12 @@ int main()
         case 1:
             printf("Add data at end = ");
             scanf("%d", &Data);
-            Add_End(&P, Data);
+            ADD_End(&P, Data);
             break;
         case 2:
             printf("Add data at begining = ");
             scanf("%d", &Data);
-            Add_Begining(&P, Data);
+            ADD_Begining(&P, Data);
             break;
 
         case 3:
@@ -450,10 +452,11 @@ int main()
             printf("The number of nodes are = %d\n", P.Count);
             break;
         case 5:
-            printf("The total is = %d\n", Total(&P));
+            printf("The total is = %d\n", Sum(&P));
             break;
         case 6:
-            printf("The average is = %d\n", Total(&P) / P.Count);
+            printf("The average is = %d\n", Sum(&P) / P.Count);
+            // printf("The average is = %f\n",(float)( Sum(&P) / P.Count));
             break;
         case 7:
             printf("The min data = %d\n", Min_data(&P));
@@ -498,8 +501,8 @@ int main()
         case 17:
             printf("Enter search value = ");
             scanf("%d", &Search);
-
-            if (search(&P, Search == 0))
+            int res = search(&P, Search);
+            if (res == 0)
             {
                 printf("Not found.");
             }
@@ -510,10 +513,10 @@ int main()
 
             break;
         case 18:
-            printf("Enter node position to be insreted after = ");
-            scanf("%d", &Replace);
-            printf("The data = ");
+            printf("Enter node to be replaced = ");
             scanf("%d", &Search);
+            printf("The data = ");
+            scanf("%d", &Replace);
             Replace_search(&P, Search, Replace);
             break;
 

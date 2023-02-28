@@ -13,7 +13,7 @@ int main()
     printf("Enter the size of queue = ");
     scanf("%d", &size);
     queue[size];
-
+    int ch;
     while (1)
     {
         printf("\n\nHII\n1.Enqueue\n2.Dequeue\n3.Traversre\n4.Change size of queue\n5.Exit\nEnter the choice = ");
