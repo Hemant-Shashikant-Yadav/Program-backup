@@ -14,25 +14,25 @@ public class Digonal_sum {
             }
         }
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < matrix.length; j++) {
+        // for (int i = 0; i < 3; i++) {
+        // for (int j = 0; j < matrix.length; j++) {
 
-                if (i == j) {
-                    sum += matrix[i][j];
-                }
-                if (i + j == matrix.length - 1 && i != j) {
-                    sum += matrix[i][j];
-                }
+        // if (i == j) {
+        // sum += matrix[i][j];
+        // }
+        // if (i + j == matrix.length - 1 && i != j) {
+        // sum += matrix[i][j];
+        // }
+        // }
+        // }
+
+        for (int i = 0; i < matrix.length; i++) {
+            sum += matrix[i][i];
+
+            if (i != matrix.length - 1 - i) {
+                sum += matrix[i][matrix.length - i - 1];
             }
         }
-
-        // for (int i = 0; i < matrix.length; i++) {
-        // sum += matrix[i][i];
-
-        // if (i != matrix.length - 1 - i) {
-        // sum += matrix[i][matrix.length - i - 1];
-        // }
-        // }
         System.out.println("The sum of digonal elements in matrix = " + sum);
 
         sc.close();
