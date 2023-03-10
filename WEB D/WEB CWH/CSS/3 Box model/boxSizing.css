@@ -9,13 +9,14 @@
     padding: 2px;
     border: 3px solid black;
     /* box-sizing:; */
+    
 }
 .box2
 {
     margin: 29px;
     padding: 59px;
     border: 3px dotted rgb(255, 0, 0);
-    /* box-sizing:content-box;*/
+    /* box-sizing:content-box; */
     /* width: 1500px;  */
     box-sizing: border-box;
 }

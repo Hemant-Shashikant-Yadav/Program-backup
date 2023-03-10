@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 
 public class area_of_circle_input_radius {

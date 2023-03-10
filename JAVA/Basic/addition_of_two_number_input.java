@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 
 public class addition_of_two_number_input {

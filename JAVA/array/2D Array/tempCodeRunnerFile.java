@@ -1,2 +1,0 @@
-
-        //     sum += matrix[i][i];
