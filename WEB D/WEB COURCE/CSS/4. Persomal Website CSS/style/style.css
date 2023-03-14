@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+}
+.Top {
+  position: relative;
+  background-color: #fbebb4dc;
+  padding: 80px;
+}
+
+.cloud-top{
+  position: relative;
+  left: 190px;
+
+}
+.cloud-bottom{
+  position: absolute;
+}
