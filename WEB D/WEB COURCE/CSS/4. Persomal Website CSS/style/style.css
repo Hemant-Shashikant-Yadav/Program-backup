@@ -1,21 +1,174 @@
 body {
   margin: 0;
   text-align: center;
+  background-color: #fef8d9d8;
 }
+
+/* Top section */
 h1 {
-  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 9vw;
+  font-weight: 900;
+  font-style: italic;
+  margin: 3.33vw 0 0 0;
 }
 .Top {
   position: relative;
   background-color: #fbebb4dc;
-  padding: 80px;
+  padding-top: 10vw;
+  /* height:530px; */
+  height: 39vw;
 }
 
-.cloud-top{
-  position: relative;
-  left: 190px;
-
-}
-.cloud-bottom{
+.cloud-top {
   position: absolute;
+  /* left: 250px; */
+  top: 15%;
+  right: 20%;
+  width: 13%;
+}
+
+.Subtitle {
+  font-size: 2.2vw;
+  margin: 0 0 25px 0;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  /* left: 810px; */
+  right: 13%;
+  width: 37vw;
+}
+
+.cloud-bottom {
+  position: absolute;
+  left: 20%;
+  top: 55%;
+  width: 13%;
+}
+
+.mountain {
+  position: absolute;
+  display: block;
+  left: 27%;
+  bottom: 0;
+  width: 40%;
+}
+h1,
+.Subtitle {
+  color: #806d00;
+}
+
+/* mid section */
+.profile-pic {
+  width: 25vw;
+}
+.computer {
+  width: 16vw;
+  float: left;
+  margin-right: 5%;
+}
+.computer2 {
+  width: 16vw;
+  float: left;
+  margin-right: 5%;
+}
+.chili {
+  width: 16vw;
+  float: right;
+  margin-right: 5%;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+  line-height: 2;
+}
+.skill-row {
+  text-align: left;
+  margin: 5% auto 6% auto;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.5%;
+}
+
+h3,
+a {
+  color: #8e7900;
+}
+
+h2 {
+  font-family: "Texturina", serif;
+  font-size: 3.5vw;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2vw;
+  text-decoration: underline;
+}
+
+p,
+.skill3 {
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 1.6vw;
+}
+.skill3 {
+  /* list-style: none; */
+  margin: 0 0 3% 0;
+}
+.left-padding {
+  margin-left: 55%;
+}
+
+/* bottom section */
+.btn {
+  font-size: 1.87vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bottom-container {
+  font-size: 1.73vw;
+  font-family: "Playfair Display", serif;
+  background-color: #fbebb4dc;
+  padding-top: 2%;
+}
+
+.img-ref-link {
+  font-size: 1.2vw;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+hr {
+  border-color: rgba(255, 0, 0, 0.598);
+  border-style: none;
+  border-bottom-style: dotted;
+  border-width: thick;
+  width: 4%;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+.copyright{
+  margin-bottom: 0;
+  font-size: 1.4vw;
+}
+.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  background: #fef8d9d8;
+  padding: 0.42vw 1.67vw 0.42vw 1.67vw;
+  border: solid #4f4937dc 3px;
+  margin: 1%;
+  display: inline-block;
+}
+
+.btn:hover {
+  border: solid #000000dc 3px;
 }

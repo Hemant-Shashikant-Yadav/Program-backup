@@ -1,0 +1,163 @@
+#title {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.container-fluid {
+  padding: 7% 15% 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.navbar {
+  padding-bottom: 8%;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.771);
+  font-family: "Montserrat-bold", sans-serif;
+  font-size: 1.3rem;
+}
+/* 
+.nav-content{
+    padding: 0 7%;
+} */
+
+.button-download {
+  margin: 5% 3% 5% 0;
+}
+
+.image-top {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 55%;
+}
+
+.heading {
+  height: 37vw;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid {
+    margin: auto;
+    text-align: center;
+  }
+  .image-top {
+    width: 40%;
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+  }
+  .heading {
+    height: auto;
+  }
+}
+
+#features {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+  padding: 0 15% 0;
+}
+
+.container {
+  text-align: center;
+}
+.features-padding {
+  padding: 6%;
+  margin: 10% 0;
+}
+.feature-img {
+  color: #ef8172;
+  font-size: 6vw;
+  padding: 8%;
+}
+.feature-img:hover {
+  color: #ff4c68;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+p {
+  color: #8f8f8f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 991px) {
+  .feature-img {
+    color: #ef8172;
+    font-size: 6vw;
+    padding: 1%;
+  }
+  .features-padding {
+    padding: 5%;
+    margin: 2%;
+  }
+  #features {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    padding: 10% 0;
+  }
+}
+
+#testimonials {
+  background-color: #ef8172;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  width: 85%;
+  margin: auto;
+}
+
+.the-img {
+  border-radius: 100%;
+  width: 15%;
+  margin: 2%;
+  display: block;
+  margin: auto;
+}
+em {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+    
+}
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%  ;
+}
+.press-img {
+    width: 15%;
+    margin: 0 1.5% 2%  1.5%;
+}
