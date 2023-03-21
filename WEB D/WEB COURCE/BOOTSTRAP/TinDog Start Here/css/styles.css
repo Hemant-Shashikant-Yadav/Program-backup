@@ -126,7 +126,7 @@ p {
   text-align: center;
 }
 
-h2 {
+.testimonials-h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -161,3 +161,23 @@ em {
     width: 15%;
     margin: 0 1.5% 2%  1.5%;
 }
+
+
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-heading{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.3rem;
+}
+
+.price-colum{
+  padding: 3% 2%;
+}
+
+767
+
