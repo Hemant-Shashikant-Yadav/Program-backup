@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define M 50;
+#define M 50
 
 typedef struct charstack
 {
@@ -29,8 +29,3 @@ char pop(CSTK *t)
     return t->arr[t->top--];
 }
 
-int main()
-{
-
-    return 0;
-}

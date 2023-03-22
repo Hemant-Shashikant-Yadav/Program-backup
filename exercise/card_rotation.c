@@ -26,7 +26,7 @@ Node* createNode(int key) {
     node->data = key;
     node->next = NULL;
     return node;
-}
+}//ccccc
 
 void enqueue(Queue* q, int key) {
     Node* temp = createNode(key);

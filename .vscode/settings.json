@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "random": "c"
+        "random": "c",
+        "cstk.h": "c"
     },
     "cmake.configureOnOpen": false,
     "java.debug.settings.onBuildFailureProceed": true,
