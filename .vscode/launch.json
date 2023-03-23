@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "yy",
+            "request": "launch",
+            "mainClass": "yy",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "coput",
+            "request": "launch",
+            "mainClass": "Object_oriented.coput",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "student",
+            "request": "launch",
+            "mainClass": "Object_oriented.student",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "oop4",
+            "request": "launch",
+            "mainClass": "Object_oriented.oop4",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "oop3",
+            "request": "launch",
+            "mainClass": "Object_oriented.oop3",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "oop2",
+            "request": "launch",
+            "mainClass": "Object_oriented.oop2",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "oop1",
+            "request": "launch",
+            "mainClass": "Object_oriented.oop1",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "OOP3_constructor",
+            "request": "launch",
+            "mainClass": "OOP.OOP3_constructor",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "OOP4_constructor_copy",
             "request": "launch",
             "mainClass": "OOP.OOP4_constructor_copy",
