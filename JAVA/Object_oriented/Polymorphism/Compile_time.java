@@ -1,4 +1,6 @@
-public class polymophism_compile_time_overloading {
+
+public class Compile_time {
+
     public static void main(String[] args) {
         calculator C = new calculator();
 
