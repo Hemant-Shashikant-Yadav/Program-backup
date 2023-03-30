@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Encode+Sans:wght@600&family=Lora:wght@400;700&family=Rubik&family=Secular+One&display=swap');
+
+body {
+  background-color: #fff7e3;
+}
+
+hr{ 
+    border-color: red;
+    border-style: none;
+    border-bottom-style: dotted;
+    border-width: thick;
+    width: 5%;
+}
+.center{
+    text-align: center;
+}
+
+h1{
+  color: #0511b6;
+  font-family: 'Lora', serif;
+}
+h2{ 
+  font-family: 'Secular One', sans-serif;
+  color: #23b73c;
+}
+h3, span{
+  font-family: 'Encode Sans', sans-serif;
+}
+th{
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'Archivo', sans-serif;
+}
+.link{
+  font-family: 'Encode Sans', sans-serif;
+}

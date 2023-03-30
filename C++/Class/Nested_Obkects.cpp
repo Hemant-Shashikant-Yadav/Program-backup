@@ -11,6 +11,7 @@ private:
     int EmpNo;
     char EmpName[50];
     int EmpSalPerHr;
+    int WorkingTime;
     Classs_time T;
 
 public:
@@ -40,9 +41,14 @@ public:
         T.setTime();
     }
 
-    void diaplay()
+    void diaplay1()
     {
-        cout << "Employee data = \n Emp. no. = " << EmpNo << "\nEmp. name = " << EmpName << "\nEmp salary per hr = " << EmpSalPerHr << "\nWork time = " << T.display() << endl;
+        cout << "Employee data = " << endl;
+        cout << "Emp. no. = " << EmpNo << endl;
+        cout << "Emp. name = " << EmpName << endl;
+        cout << "Emp salary per hr = " << EmpSalPerHr << endl;
+        cout << "Work time = " << endl;
+        T.display();
 
         int a = T.getHr();
         int b = T.getMin();
@@ -108,7 +114,7 @@ int main()
     }
     for (int i = 0; i < 5; i++)
     {
-        E[i].diaplay();
+        E[i].diaplay1();
     }
 
     for (int i = 0; i < 4; i++)
@@ -116,7 +122,7 @@ int main()
         pos = i;
         for (int j = 1; j < 5; j++)
         {
-            if (E[j].compareNo(a[pos]))
+            if (E[j].compareNo(E[pos]))
             {
                 pos = j;
                 /* code */
@@ -125,7 +131,7 @@ int main()
         }
         if (i != pos)
         {
-            int temp = E[i];
+            Employee temp = E[i];
             E[i] = E[pos];
             E[pos] = temp;
         }
@@ -133,7 +139,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        E[i].diaplay();
+        E[i].diaplay1();
     }
 
     return 0;

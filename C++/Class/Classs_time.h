@@ -43,12 +43,12 @@ public:
         cout << "In secs";
         cin >> sec;
     }
-    void setTime(int hr = 0, int min = 0, int sec = 0)
-    {
-        this->hr = hr;
-        this->min = min;
-        this->sec = sec;
-    }
+    // void setTime(int hr = 0, int min = 0, int sec = 0)
+    // {
+    //     this->hr = hr;
+    //     this->min = min;
+    //     this->sec = sec;
+    // }
     void setTime(long int t)
     {
         hr = t / 3600;
@@ -72,24 +72,24 @@ public:
     void display()
     {
         cout << "Time = " << endl;
-        cout << "Hrs = " << hr << endl;
+         cout << "Hrs = " << hr << endl;
         cout << "Mins = " << min << endl;
         cout << "Secs = " << sec << endl;
     }
-    void isMore(Classs_time &t)
-    {
-        long int a = toSeconds();
-        long int b = t.toSeconds();
+    //  bool isMore(Classs_time &t)
+    // {
+    //     long int a = toSeconds();
+    //     long int b = t.toSeconds();
 
-        return a > b;
-    }
-    void isLess(Classs_time &t)
-    {
-        long int a = toSeconds();
-        long int b = t.toSeconds();
+    //     return (a > b);
+    // }
+    //  bool isLess(Classs_time &t)
+    // {
+    //     long int a = toSeconds();
+    //     long int b = t.toSeconds();
 
-        return a < b;
-    }
+    //     return (a < b);
+    // }
 
     Classs_time add(Classs_time &t)
     {

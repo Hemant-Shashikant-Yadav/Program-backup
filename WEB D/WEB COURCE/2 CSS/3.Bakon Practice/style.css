@@ -1,0 +1,26 @@
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+
+    background-color: red;
+}
+
+#header{
+    color: blue;
+}
+
+.circular{
+    border-radius: 100%;
+}
+
+img:hover{
+    background-color: yellow;
+}
+
