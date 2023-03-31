@@ -65,3 +65,23 @@ document.querySetector("a").getAttribute("href");
 https: document.querySetector("a").setAttribute("href", "https://www.bing.com");
    
  */
+
+
+/*
+Event listner = 
+document.querySelectorAll("element like =  class id element").addEventListener("operation on which it triggers function",function name eg.clickAlert);
+
+// function clickAlert() {
+//   alert("You clicked a button.");
+// }
+
+
+document.querySelectorAll("element like =  class id element").addEventListener("operation on which it triggers function", function () {
+  alert("You clicked a button.");
+});
+
+document.querySelectorAll("button").addEventListener("click", function () {
+  alert("You clicked a button.");
+});
+
+ */

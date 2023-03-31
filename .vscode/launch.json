@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "merg_sort",
+            "request": "launch",
+            "mainClass": "merg_sort",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "yy",
             "request": "launch",
             "mainClass": "yy",
