@@ -17,11 +17,13 @@ for (var i = 0; i < noOfDrumButtons; i++) {
     // console.log(this.innerHTML);
 
     playSound(this.innerHTML);
+    bottonAnimation(this.innerHTML);
   });
-}
+}   
 
 document.addEventListener("keydown", function (event) {
   playSound(event.key);
+  bottonAnimation(event.key);
 });
 
 function playSound(key) {
@@ -60,4 +62,14 @@ function playSound(key) {
 
       break;
   }
+}
+
+function bottonAnimation(currentKey) {
+  var activrButton = document.querySelector("." + currentKey);
+
+  activrButton.classList.add("pressed");
+
+  setTimeout(function () {
+    activrButton.classList.remove("pressed");
+  }, 100);
 }

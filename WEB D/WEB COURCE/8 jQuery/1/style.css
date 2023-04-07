@@ -1,0 +1,13 @@
+.bigTitle {
+  font-size: 5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.backgroundc {
+  background-color: aqua;
+}
+
+.borderh1 {
+  border: 10px solid black;
+}
