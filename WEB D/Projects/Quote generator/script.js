@@ -58,7 +58,7 @@ async function getQuote() {
     qoutesArray = await response.json();
     newQuote();
   } catch (error) {
-    newQuote();
+    getQuote();
   }
 }
 
