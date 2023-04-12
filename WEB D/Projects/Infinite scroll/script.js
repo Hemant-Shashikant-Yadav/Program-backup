@@ -1,6 +1,6 @@
-const count = 10;
+const count = 30;
 var photoArray = [];
-const APIkey = "opon2cQIAas_3NkZKtkH1vXgUPx3Bj2wiP7jX65QT1g";
+const APIkey = "qStYM8vI-T1y02VhGnbUlfKxwg0QK6HJr5S08lzPHgM";
 
 const API = `https://api.unsplash.com/photos/random/?client_id=${APIkey}&count=${count}`;
 var imgContainer = document.getElementById("img-container");
@@ -53,3 +53,7 @@ async function getPhotos() {
 }
 
 getPhotos();
+
+document.addEventListener('scroll',function () {
+  console.log('scrolled');
+})
