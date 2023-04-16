@@ -57,7 +57,7 @@ void Display(PQ *t)
 {
     int i = t->front;
 
-    if (t)
+    if (t->rear==-1)
     {
         printf("\nEmpty Queue");
         /* code */

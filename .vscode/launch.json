@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "N_queen1",
+            "request": "launch",
+            "mainClass": "N_queen1",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Rat_in_a_maze2",
+            "request": "launch",
+            "mainClass": "Rat_in_a_maze2",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Rat_in_a_maze1",
+            "request": "launch",
+            "mainClass": "Rat_in_a_maze1",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Rat_in_a_maze",
+            "request": "launch",
+            "mainClass": "Rat_in_a_maze",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "merg_sort",
             "request": "launch",
             "mainClass": "merg_sort",

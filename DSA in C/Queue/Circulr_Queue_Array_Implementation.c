@@ -42,14 +42,14 @@ void insert(CQue *t, int data)
     }
     if (t->rear == M - 1)
     {
-        ++t->rear;
+        t->rear = 0;
         t->arr[t->rear] = data;
         /* code */
     }
     else
     {
         ++t->rear;
-        t->arr[t->rear] = -1;
+        t->arr[t->rear] = data;
     }
 }
 void removeQ(CQue *t)
@@ -63,6 +63,7 @@ void removeQ(CQue *t)
     if (t->front == M - 1)
     {
         t->front = 0;
+        t->arr[t->front] = -1;
         /* code */
     }
     else
@@ -82,7 +83,11 @@ void diaplay(CQue *t)
     }
     if (t->front < t->rear)
     {
-        printf("%4d", t->arr[i]);
+        for (int i = t->front + 1; i <= t->rear; i++)
+        {
+            /* code */
+            printf("%4d", t->arr[i]);
+        }
     }
     else
     {
