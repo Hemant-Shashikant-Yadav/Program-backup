@@ -111,11 +111,11 @@ void Delete(RLIST *T)
         }
     }
 
-    if (a == NULL)
-    {
-        printf("Record not found.");
-        return;
-    }
+    // if (a == NULL)
+    // {
+    //     printf("Record not found.");
+    //     return;
+    // }
 
     if (a->next == NULL)
     {

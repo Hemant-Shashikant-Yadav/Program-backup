@@ -17,6 +17,7 @@ class Driver {
         }
     }
 }
+
 // } Driver Code Ends
 
 // User function Template for Java
@@ -30,8 +31,11 @@ class Reverse {
         for (int k = str.length()-1; k >=0; k--) {
             str1 += str.charAt(k);
         }
+        int arr=Integer_MIN;
 
         return str1;
         // Reverse the string str
+
+        
     }
 }

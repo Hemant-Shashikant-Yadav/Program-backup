@@ -15,7 +15,7 @@ public:
     Marks(int a, double b)
     {
         no = a;
-        marks = b
+        marks = b;
     }
     ~Marks() {}
     operator int()
@@ -25,7 +25,7 @@ public:
 
     operator double()
     {
-        return marks
+        return marks;
     }
 
     friend istream &operator>>(istream &in, Marks &m)

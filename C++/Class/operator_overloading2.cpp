@@ -94,23 +94,23 @@ Matrix Matrix::operator-(Matrix &t)
     return b;
 }
 
-// Matrix Matrix ::operator*(Matrix &t)
-// {
-//     Matrix b;
-//     for (int i = 0; i < 3; i++)
-//     {
-//         for (int j = 0; j < 3; j++)
-//         {
-//             for (int k = 0; k < 3; k++)
-//             {
-//                 b.A[i][j] = (this->A[i][k] * t.A.[k][i]);
-//             }
+Matrix Matrix ::operator*(Matrix &t)
+{
+    Matrix b;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            for (int k = 0; k < 3; k++)
+            {
+                b.A[i][j] = (this->A[i][k] * t.A[k][i]);
+            }
 
-//             /* code */
-//         }
-//     }
-//     return b;
-// }
+            /* code */
+        }
+    }
+    return b;
+}
 
 Matrix Matrix ::operator-()
 {
