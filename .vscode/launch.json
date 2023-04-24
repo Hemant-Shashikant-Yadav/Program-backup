@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Check_linked_list_is_pelindrome",
+            "request": "launch",
+            "mainClass": "Check_linked_list_is_pelindrome",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
+            "name": "Delete_nth_node_from_end",
+            "request": "launch",
+            "mainClass": "Delete_nth_node_from_end",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
+            "name": "Reverse_LinkedList",
+            "request": "launch",
+            "mainClass": "Reverse_LinkedList",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList1",
+            "request": "launch",
+            "mainClass": "LinkedList1",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
             "name": "N_queen1",
             "request": "launch",
             "mainClass": "N_queen1",
