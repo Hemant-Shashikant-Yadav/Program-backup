@@ -132,6 +132,110 @@ void createTree(BST *t)
     }
 }
 
+int search(BST *t, int sv)
+{
+    int flag = 0;
+    NODE *a = t->rt;
+
+    while (1)
+    {
+        if (a->data == sv)
+        {
+            t->curr = a;
+            flag = 1;
+            break;
+        }
+        if (sv < a->data)
+        {
+            if (a->left != NULL)
+            {
+                /* code */
+                t->prnt = a;
+                a = a->left;
+            }
+            else
+            {
+                break;
+            }
+        }
+        else
+        {
+            if (a->right != NULL)
+            {
+                /* code */
+                t->prnt = a;
+                a = a->right;
+            }
+            else
+            {
+                break;
+            }
+            /* code */
+        }
+    }
+    return flag;
+}
+
+void deleteNode(BST *t)
+{
+    int d, res;
+    NODE *p, *q, *r, *s;
+
+    printf("Enter data = ");
+    scanf("%d", &d);
+
+    res = search(t, d);
+
+    if (res == 0)
+    {
+        printf("NO such data");
+        return;
+        /* code */
+    }
+    p = t->prnt;
+    q = t->curr;
+
+    if (q->left == NULL && q->right == NULL)
+    {
+        if (p->left == q)
+        {
+            p->left == NULL;
+            /* code */
+        }
+        else
+        {
+            p->right = NULL;
+        }
+        free(q);
+        return;
+        /* code */
+    }
+    if (q->left != NULL && q->right != NULL)
+    {
+        if (q->right == q)
+        {
+            r = q->left;
+
+            r = r->right;
+            /* code */
+        }
+        s->right = q->right;
+        p->right = q->left;
+    }
+    else
+    {
+        r = q->right;
+        while (r != NULL)
+        {
+            s = r;
+            r = r->left;
+        }
+        s->left = q->left;
+        p->left = q->right;
+    }
+    /* code */
+}
+
 int main()
 {
     int opt, d, flag = 0;
@@ -140,10 +244,10 @@ int main()
 
     while (1)
     {
-        printf("\vTree menu:\n1.Create tree.\n2.Preorder.\n3.Inorder\n4.Postorder.\n5.Exit\nSelect option = ");
+        printf("\vTree menu:\n1.Create tree.\n2.Preorder.\n3.Inorder\n4.Postorder.\n5.Search\n6Delete node\n7.Exit\nSelect option = ");
         scanf("%d", &opt);
 
-        if (opt == 5)
+        if (opt == 7)
         {
             break;
         }
@@ -174,6 +278,26 @@ int main()
             case 4:
                 printf("PostOrder = ");
                 postOrder(T.rt);
+                break;
+
+                break;
+            case 5:
+                printf("Enter search value = ");
+                int sv;
+                scanf("%d", &sv);
+                int flag = search(&T, sv);
+                if (flag == 1)
+                {
+                    printf("Node found.");
+                    /* code */
+                }
+                else
+                {
+                    printf("Node not found.");
+                    /* code */
+                }
+            case 6:
+                deleteNode(&T);
                 break;
 
                 break;

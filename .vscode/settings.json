@@ -30,7 +30,8 @@
         "thread": "cpp",
         "regex": "cpp",
         "tuple": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "iosfwd": "cpp"
     },
     "cmake.configureOnOpen": false,
     "java.debug.settings.onBuildFailureProceed": true,
