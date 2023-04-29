@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Intersection_of_two_ll",
+            "request": "launch",
+            "mainClass": "Intersection_of_two_ll",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "Check_linked_list_is_pelindrome",
             "request": "launch",
             "mainClass": "Check_linked_list_is_pelindrome",

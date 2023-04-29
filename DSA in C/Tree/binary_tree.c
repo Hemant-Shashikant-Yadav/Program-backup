@@ -233,6 +233,22 @@ void deleteNode(BST *t)
         s->left = q->left;
         p->left = q->right;
     }
+    if (p->right == q)
+    {
+        if (q->left == NULL)
+        {
+            p->right = q->right;
+        }
+        else
+        {
+            p->right = p->left;
+        }
+        free(q);
+        return;
+
+        /* code */
+    }
+
     /* code */
 }
 
