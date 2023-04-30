@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+}
+ul {
+  padding: 40px 0;
+  list-style: none;
+}
+
+li {
+  padding: 0 20px;
+  font-size: 30px;
+  color: wheat;
+  display: inline;
+}
+
+.para1 {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  background-color: aquamarine;
+}
+
+.para2 {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  background-color:yellowgreen;
+}
