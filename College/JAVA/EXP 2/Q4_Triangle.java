@@ -2,7 +2,9 @@ class Triangle{
     int side1,side2,side3;
     float semiperimeter;
 
-    Triangle(int side1,int side2,int side3)
+    Triangle(){}
+
+    void setData(int side1,int side2,int side3)
     {
     	this.side1 = side1;
     	this.side2 = side2;
@@ -21,9 +23,10 @@ class Triangle{
     }
 }
 
-public class Q5_Triangle {
+public class Q4_Triangle {
     public static void main(String[] args) {
-        Triangle T = new Triangle(3, 4, 5);
+        Triangle T = new Triangle();
+        T.setData(3, 4, 5);
        System.out.println(T.getArea()); 
        System.out.println(T.getPerimeter()); 
         

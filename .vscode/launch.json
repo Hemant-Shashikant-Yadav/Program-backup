@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q9_Complex_numbers",
+            "request": "launch",
+            "mainClass": "Q9_Complex_numbers",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
+            "name": "Q11_Distance",
+            "request": "launch",
+            "mainClass": "Q11_Distance",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
+            "name": "Q5_Triangle",
+            "request": "launch",
+            "mainClass": "Q5_Triangle",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
             "name": "Intersection_of_two_ll",
             "request": "launch",
             "mainClass": "Intersection_of_two_ll",
