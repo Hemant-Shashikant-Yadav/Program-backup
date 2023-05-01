@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q1_Rectangle_area",
+            "request": "launch",
+            "mainClass": "Q1_Rectangle_area",
+            "projectName": "Program-backup_d59cc3e6"
+        },
+        {
+            "type": "java",
             "name": "Q9_Complex_numbers",
             "request": "launch",
             "mainClass": "Q9_Complex_numbers",
