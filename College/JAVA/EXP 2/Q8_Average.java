@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-class Average{
+
+public class Q8_Average {
+    public static class Average{
     int num1,num2,num3;
 
     Average(int num1,int num2,int num3)
@@ -16,7 +18,6 @@ class Average{
     }
 }
 
-public class Q8_Average {
     public static void main(String[] args) {
         int num1, num2, num3;
 

@@ -1,4 +1,6 @@
-class Triangle{
+
+public class Q5_Triangle {
+    public static class Triangle{
     int side1,side2,side3;
     float semiperimeter;
 
@@ -21,11 +23,11 @@ class Triangle{
     }
 }
 
-public class Q5_Triangle {
     public static void main(String[] args) {
         Triangle T = new Triangle(3, 4, 5);
-       System.out.println(T.getArea()); 
-       System.out.println(T.getPerimeter()); 
+        System.out.println("Area of triangle is = "+T.getArea());
+        System.out.println("Perimeter of triangle is = "+T.getPerimeter());
+
         
     }
 }

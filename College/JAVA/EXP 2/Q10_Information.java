@@ -1,5 +1,7 @@
 
-class Employee {
+
+public class Q10_Information {
+    public static class Employee {
     String name;
     int yearOfJoining;
     String address;
@@ -14,7 +16,6 @@ class Employee {
     }
 }
 
-public class Q10_Information {
     public static void main(String[] args) {
         Employee E1 = new Employee("Robert", 1994, "64C- WallsStreat");
         E1.display();

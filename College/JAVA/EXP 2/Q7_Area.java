@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-class Area{
+
+public class Q7_Area {
+    public static class Area{
     int length,breadth;
 
     Area(int length,int breadth)
@@ -13,7 +15,6 @@ class Area{
         return length*breadth;
     }
 }
-public class Q7_Area {
     public static void main(String[] args) {
         int length,breadth;
 

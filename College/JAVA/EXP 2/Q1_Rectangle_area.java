@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-class Area {
-    int length, breadth;
-
-    void setDim(int length, int breadth) {
-        this.length = length;
-        this.breadth = breadth;
-    }
-
-    int getArea() {
-        return length * breadth;
-    }
-}
-
 public class Q1_Rectangle_area {
+
+    public static class Area {
+        int length, breadth;
+
+        void setDim(int length, int breadth) {
+            this.length = length;
+            this.breadth = breadth;
+        }
+
+        int getArea() {
+            return length * breadth;
+        }
+    }
 
     public static void main(String[] args) {
         int length, breadth;
