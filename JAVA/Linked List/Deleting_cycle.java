@@ -12,21 +12,8 @@ public class Deleting_cycle {
     }
 
     public static Node head;
-    public static Node tail;
 
-    public void addEnd(int data) {
-        Node newNode = new Node(data);
-
-        if (head == null) {
-            head = newNode;
-            tail = newNode;
-        } else {
-
-            tail.next = newNode;
-            tail = newNode;
-        }
-
-    }
+    
 
     public static void isCycle() {
 
@@ -73,7 +60,7 @@ public class Deleting_cycle {
         head.next.next.next = new Node(4);
         head.next.next.next.next = head.next.next;
         // 1--2--3--4--3
-        // 1--2--
+        // 1--2--3--4
 
         isCycle();
 
