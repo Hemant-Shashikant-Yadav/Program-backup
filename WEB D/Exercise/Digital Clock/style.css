@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@font-face {
+  font-family: h;
+  src: url(digital-7.regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #454545;
+}
+
+.outline {
+  border-radius: 14px 14px 14px 14px;
+  -moz-border-radius: 14px 14px 14px 14px;
+  -webkit-border-radius: 14px 14px 14px 14px;
+  border: 3px solid #000000;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 65%;
+  background: rgba(241, 231, 103, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 17%,
+    rgba(246, 214, 91, 1) 35%,
+    rgba(252, 191, 76, 1) 59%,
+    rgba(254, 182, 69, 1) 69%
+  );
+
+  background: -webkit-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 17%,
+    rgba(246, 214, 91, 1) 35%,
+    rgba(252, 191, 76, 1) 59%,
+    rgba(254, 182, 69, 1) 69%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 17%,
+    rgba(246, 214, 91, 1) 35%,
+    rgba(252, 191, 76, 1) 59%,
+    rgba(254, 182, 69, 1) 69%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 17%,
+    rgba(246, 214, 91, 1) 35%,
+    rgba(252, 191, 76, 1) 59%,
+    rgba(254, 182, 69, 1) 69%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(241, 231, 103, 1) 17%,
+    rgba(246, 214, 91, 1) 35%,
+    rgba(252, 191, 76, 1) 59%,
+    rgba(254, 182, 69, 1) 69%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+  -webkit-box-shadow: 0px 0px 48px 8px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 48px 8px rgba(255,255,255,1);
+box-shadow: 0px 0px 48px 8px rgba(255,255,255,1);
+}
+
+.box1-1,
+.box2-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1,
+.box2,
+.box3 {
+  font-size: 30px;
+}
+
+.font {
+  font-family: h;
+}
+span {
+  font-size: 87px;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+h1 {
+  font-size: 73px;
+}
+
+hr{
+    border: 2px solid black;
+    width: 73%;
+}

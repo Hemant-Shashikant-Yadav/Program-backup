@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="384"
+   height="384"
+   viewBox="0 0 384 384"
+   sodipodi:docname="TATA.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <path
+         d="M 0,288 H 288 V 0 H 0 Z"
+         id="path14" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="TATA"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,384)">
+    <g
+       id="g10">
+      <g
+         id="g12"
+         clip-path="url(#clipPath16)">
+        <path
+           d="m 111.835,108.071 h 17.296 V 102.81 H 124.17 V 90.163 h -7.207 v 12.647 h -5.128 z"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path18" />
+        <path
+           d="M 137.892,100.836 134.25,90.163 h -6.922 l 6.789,17.908 h 7.517 l 6.951,-17.908 h -7.006 z"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path20" />
+        <path
+           d="m 146.933,108.071 h 17.296 v -5.261 h -4.96 V 90.163 h -7.208 v 12.647 h -5.128 z"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path22" />
+        <path
+           d="m 172.989,100.836 -3.64,-10.673 h -6.922 l 6.788,17.908 h 7.516 l 6.952,-17.908 h -7.005 z"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path24" />
+        <path
+           d="m 173.246,140.966 c -0.644,1.268 -1.498,2.486 -2.555,3.628 -2.377,2.565 -5.733,4.7 -9.704,6.173 -4.001,1.484 -8.568,2.267 -13.206,2.267 -4.638,0 -9.206,-0.783 -13.207,-2.267 -3.97,-1.473 -7.327,-3.608 -9.704,-6.173 -1.057,-1.143 -1.91,-2.361 -2.556,-3.63 5.168,1.249 14.01,2.899 22.219,3.072 0.792,0.018 1.337,-0.235 1.696,-0.69 0.438,-0.553 0.405,-2.53 0.393,-3.412 l -0.233,-22.831 c 0.463,-0.015 0.926,-0.027 1.392,-0.027 0.468,0 0.936,0.01 1.399,0.026 l -0.235,22.832 c -0.011,0.882 -0.045,2.859 0.393,3.412 0.359,0.455 0.904,0.708 1.696,0.69 8.206,-0.173 17.043,-1.822 22.212,-3.07"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path26" />
+        <path
+           d="m 174.349,137.996 c -7.565,1.711 -12.616,2.026 -17.602,2.303 -4.344,0.24 -4.399,-1.311 -3.966,-4.275 0.027,-0.18 0.063,-0.408 0.105,-0.669 1.457,-8.628 3.27,-16.054 3.583,-17.314 10.594,2.42 18.232,9.132 18.232,17.015 0,0.993 -0.121,1.975 -0.352,2.94"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path28" />
+        <path
+           d="m 142.786,136.024 c 0.435,2.964 0.378,4.515 -3.966,4.275 -4.987,-0.277 -10.04,-0.592 -17.608,-2.304 -0.231,-0.965 -0.352,-1.947 -0.352,-2.939 0,-3.408 1.387,-6.705 4.01,-9.537 2.377,-2.567 5.734,-4.701 9.704,-6.173 1.44,-0.534 2.955,-0.97 4.519,-1.319 0.294,1.182 2.149,8.762 3.625,17.545 0.025,0.169 0.05,0.324 0.068,0.452"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path30" />
+        <path
+           d="m 122.555,161.829 h -19.5 v 19.5 h 19.5 z"
+           style="fill:#3b73b9;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path32" />
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,92.5137,196.9492)"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Myriad Roman';-inkscape-font-specification:Myriad-Roman;writing-mode:lr-tb;fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text36"><tspan
+             x="0 5.5320001 9.3839998 15.972 25.98 28.524 34.908001 42.900002"
+             y="0"
+             sodipodi:role="line"
+             id="tspan34">From PDF</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

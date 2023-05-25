@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+/* Header */
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: aqua;
+}
+.heading img {
+  border-radius: 50%;
+  width: 150px;
+  margin: 20px;
+}
+.subtitle {
+  text-align: right;
+}
+
+/* Navbar */
+nav {
+  background-color: aquamarine;
+  z-index: 5;
+}
+nav.nav-sticky {
+  position: sticky;
+  top: 0px;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-li {
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.nav-a {
+  text-decoration: none;
+  color: black;
+}
+.nav-li:hover {
+  background-color: wheat;
+  border: 1px solid rgba(209, 209, 209, 0.379);
+}
+
+/* CEO */
+.CEO {
+  background-color: #d8dfdc;
+}
+.CEOTitle {
+  padding: 80px 80px 30px 80px;
+  font-size: 240%;
+}
+
+.CEOName {
+  font-size: 220%;
+  padding: 10px;
+}
+.CEOImg {
+  width: 300px;
+}
+.CEOSub {
+  font-size: 1.5em;
+  padding-bottom: 40px;
+}
+
+.contacts a {
+  margin: 10px 0;
+  font-size: 160%;
+  text-decoration: none;
+  padding: 0 30px;
+}
+.sideBorder {
+  border-left: 5px double black;
+}
+.contacts {
+  padding-bottom: 40px;
+}
+nav button {
+  visibility: hidden;
+}
+
+/* Carosal */
+.ourIndustries {
+  height: 93vh;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 7px;
+}
+.Imgsize {
+  width: 50%;
+  height: 50%;
+}
+
+/* Pillars */
+.pillar {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-self: center; */
+  justify-content: space-evenly;
+}
+.disp-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.disp-flex div {
+  width: 215px;
+}
+.disp-flex img {
+  width: 100px;
+  /* border-radius: 50px; */
+  padding: 30px 0;
+}
+
+.pil-img {
+  width: 207px !important;
+  border-radius: 50px;
+}
+
+/* CEO Words */
+.CEOWords {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.disp-flexx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.disp-flexx p {
+  width: 34%;
+  padding: 0 18px;
+}
+.disp-flexx img {
+  border: 5px solid wheat;
+  width: 38%;
+  border-radius: 10px;
+}
+
+.carousel {
+  background: #eee;
+}
+
+.carousel-cell {
+  border-radius: 5px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+}
+
+.flickity-page-dots {
+  position: unset;
+  width: 100%;
+  padding: 14px;
+}
+
+.wdt h3 {
+  padding: 20px 0;
+}
+
+.w75 {
+  width: 75px !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .disp-flexx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .CEOWords {
+    height: auto;
+  }
+  .disp-flexx img {
+    width: 60%;
+  }
+  .CEOWords h2 {
+    padding: 56px 0;
+  }
+  .disp-flexx p {
+    width: 69%;
+    padding: 45px 0;
+  }
+}
+@media screen and (max-width: 878px) {
+  .pillar {
+    display: block;
+    height: auto;
+  }
+  .pillar h2 {
+    padding: 80px 0;
+  }
+  .disp-flex div {
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 515px) {
+  .flexDir {
+    flex-direction: column;
+  }
+  .nav-sticky {
+    height: 55px;
+  }
+  .nav-ul {
+    visibility: hidden;
+    position: sticky;
+    top: 0px;
+  }
+  .heading {
+    flex-direction: column;
+  }
+  nav button {
+    visibility: visible;
+    margin: 10px auto;
+    padding: 6px 44px;
+    border: 3px solid;
+    border-radius: 15px;
+    background-color: antiquewhite;
+  }
+  nav.nav-sticky {
+    position: unset;
+  }
+  .sideBorder {
+    border-left: none;
+  }
+  .contacts a {
+    padding: 0 9px;
+    margin: 3px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ourIndustries {
+    height: 60vh;
+    background-color: beige;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 7px;
+  }
+  .Imgsize {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-cell {
+    width: 66%;
+    /* height: 400px; */
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .wdt {
+    height: auto;
+  }
+  .wdt-img {
+    width: 95%;
+    padding: 30px 0;
+    border-radius: 120px;
+  }
+  .wdt p {
+    width: 60%;
+    margin: auto;
+    line-height: 1.5;
+  }
+  .w50 {
+    width: 50%;
+    padding: 30px 0;
+  }
+}

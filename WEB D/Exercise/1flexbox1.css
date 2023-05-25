@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    border-radius: 6px;
+    margin: 2px;
+    padding:0 3px;
+}
+.container1{
+    display: flex;
+
+}
+.container1div{
+    background: #c67c14;
+    width: 100%;
+    padding: 10px;
+}
+
+.container1-1{
+    width: 100%;
+    display: flex;
+
+    
+}
+.container1-1div{
+    background-color: #f2d8b4;
+    height: 40px;
+    width: 100%;
+}

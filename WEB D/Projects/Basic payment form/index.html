@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <div class="mainbody">
+
+            <div class="container">
+
+                <h1>Payment Form</h1>
+                <hr>
+                <p>Required fields are given by *.</p>
+            </div>
+            <div class="container">
+                <h2>Contact information</h2>
+                <hr>
+                <p>
+                    Name: *<input type="text" required placeholder="Name">
+                </p>
+
+                <div class="gender">
+
+                    <p>Gender</p>
+                    <p>
+                        Male: <input type="radio" name="Gender" id="male">
+                        Female: <input type="radio" name="Gender" id="female">
+                    </p>
+                </div>
+
+
+                <p>Address: *
+                    <textarea name="Address" id="" cols="70" rows="7" placeholder="Enter full address here"></textarea>
+                </p>
+
+                <p>
+                    Email: *<input type="email" name="Email" id="">
+                </p>
+
+                <p>
+                    City: *<input type="text" required placeholder="City">
+                </p>
+
+                <p>
+                    Pincode: *<input type="number" name="Pincode" id="">
+                </p>
+
+                <p>
+                    Tahsil: *<input type="text" required placeholder="Tahsil">
+                </p>
+
+                <p>
+                    District: *<input type="text" required placeholder="District">
+                </p>
+
+                <p>
+                    State: *<input type="text" required placeholder="State">
+                </p>
+
+            </div>
+
+            <div class="container">
+
+                <h2>Payment information</h2>
+                <hr>
+                <p>
+                    Card type: <select name="Card Type" id="">
+                        <option value="-- Choose a card --">-- Choose a card --</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Rupay">Rupay</option>
+                    </select>
+                </p>
+                <p>
+                    Card number: *<input type="number" name="Card Number" id="">
+                </p>
+                <p>
+                    Expiry date: *<input type="date" name="" id="">
+                </p>
+                <p>
+                    CVV: *<input type="number" name="CVV" id="">
+                </p>
+
+                <p>
+                    <input type="submit" value="Pay now">
+                </p>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
