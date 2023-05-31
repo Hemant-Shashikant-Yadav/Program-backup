@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .padding10 {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Home page</h1>
+    <h2>Rendered from Ejs</h2>
+
+    <form action="/create-contact" method="post">
+        <fieldset>
+            <legend>Add contact.</legend>
+            <div class="padding10">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required placeholder="Enter name">
+            </div>
+            <br>
+            <div class="padding10">
+                <label for="ph_no">Phone no:</label>
+                <input type="number" nam e="ph_no" id="ph_no">
+            </div>
+            <br>
+
+            <div class="padding10">
+                <input type="submit" value="Add contact">
+            </div>
+        </fieldset>
+    </form>
+    <div class="padding10">
+
+        <button><a href="/contact">Contact Page</a></button>
+    </div>
+</body>
+
+</html>

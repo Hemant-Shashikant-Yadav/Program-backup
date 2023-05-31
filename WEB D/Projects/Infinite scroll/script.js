@@ -1,3 +1,4 @@
+/*
 const count = 30;
 var photoArray = [];
 const APIkey = "qStYM8vI-T1y02VhGnbUlfKxwg0QK6HJr5S08lzPHgM";
@@ -49,7 +50,9 @@ async function getPhotos() {
     photoArray = await respance.json();
     console.log(photoArray);
     updatePhotos();
-  } catch (error) {}
+  } catch (error) {
+    console.log("An error occured during fetching images");
+  }
 }
 
 getPhotos();
@@ -57,3 +60,24 @@ getPhotos();
 document.addEventListener('scroll',function () {
   console.log('scrolled');
 })
+*/
+
+/*Getting elements */
+// loader
+var load_img = document.getElementById("loader_img");
+var load = document.getElementById("loader");
+
+//API
+var count = 20;
+const APIKey = "qStYM8vI-T1y02VhGnbUlfKxwg0QK6HJr5S08lzPHgM";
+const API = `https://api.unsplash.com/photos/random/?client_id=${APIkey}&count=${count}`;
+
+// Timeout function for loader
+setTimeout(() => {
+  load_img.setAttribute("hidden", "true");
+  load.removeAttribute("class");
+  console.log("sucess");
+}, 3000);
+
+
+//Fetching api
