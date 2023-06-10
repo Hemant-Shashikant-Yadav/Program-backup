@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q4ItemDiscount",
+            "request": "launch",
+            "mainClass": "Q4ItemDiscount",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q3Manager",
+            "request": "launch",
+            "mainClass": "Q3Manager",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q2Percentage",
+            "request": "launch",
+            "mainClass": "Q2Percentage",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q2multilevel",
+            "request": "launch",
+            "mainClass": "Q2multilevel",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q1Calculator",
+            "request": "launch",
+            "mainClass": "Q1Calculator",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q1Calculator$Addition",
+            "request": "launch",
+            "mainClass": "Q1Calculator$Addition",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "Deleting_cycle",
             "request": "launch",
             "mainClass": "Deleting_cycle",
