@@ -33,22 +33,22 @@ class Calculator implements ArithmeticOperations {
     }
 }
 
-public class Q1Calculator extends Calculator {
+public class Q1Calculator  {
     public static void main(String[] args) {
         int num1, num2;
         Scanner sc = new Scanner(System.in);
-        // Calculator C = new Calculator();
+        Calculator C = new Calculator();
 
-        Q1Calculator C = new Q1Calculator();
+        // Q1Calculator C = new Q1Calculator();
 
         System.out.print("Enter number 1 = ");
         num1 = sc.nextInt();
         System.out.print("Enter number 1 = ");
         num2 = sc.nextInt();
 
-        System.out.println("The addition of two numbers is =" + C.add(num1, num2));
-        System.out.println("The subtraction of two numbers is =" + C.subtract(num1, num2));
-        System.out.println("The multiplication of two numbers is =" + C.multiply(num1, num2));
-        System.out.println("The subtraction of two numbers is =" + C.divide(num1, num2));
+        System.out.println("The addition of two numbers is = " + C.add(num1, num2));
+        System.out.println("The subtraction of two numbers is = " + C.subtract(num1, num2));
+        System.out.println("The multiplication of two numbers is = " + C.multiply(num1, num2));
+        System.out.println("The subtraction of two numbers is = " + C.divide(num1, num2));
     }
 }

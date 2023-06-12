@@ -13,17 +13,17 @@ class Addition extends Calculator {
 
 }
 
-public class Q1Calculator {
+public class Calculator2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Addition a = new Addition();
+        Addition b = new Addition();
 
         System.out.print("Enter number 1 = ");
-        a.num1 = sc.nextInt();
+        b.num1 = sc.nextInt();
         System.out.print("Enter number 2 = ");
-        a.num2 = sc.nextInt();
+        b.num2 = sc.nextInt();
 
-        a.sum();
+        b.sum();
     }
 }

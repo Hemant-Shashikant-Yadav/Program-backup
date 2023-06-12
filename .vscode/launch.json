@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Q12student",
+            "request": "launch",
+            "mainClass": "Q12student",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "Q9Student",
+            "request": "launch",
+            "mainClass": "Q9Student",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "Q4ItemDiscount",
             "request": "launch",
             "mainClass": "Q4ItemDiscount",

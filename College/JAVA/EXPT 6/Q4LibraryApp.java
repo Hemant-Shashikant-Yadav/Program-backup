@@ -1,4 +1,9 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 interface LibraryItem {
+    void add();
+
     void checkOut();
 
     void checkIn();
@@ -8,50 +13,83 @@ interface LibraryItem {
 }
 
 class Book implements LibraryItem {
-    String title, author, ISBN;
+    String nm, at, id;
 
-    public void name() {
+    static int bkcount = 0;
+    Scanner sc = new Scanner(System.in);
 
-    }
-
-    public void checkOut(){
-
-    }
-
-    public void checkIn(){
+    class bk {
+        String title, author;
+        boolean availability;
+        int ISBN;
 
     }
 
-    public boolean isAvailable(){
+ 
+
+    public void checkOut() {
+
+    }
+
+    public void checkIn() {
+
+    }
+
+    public boolean isAvailable() {
         return true;
     }
 
 }
 
 class DVD implements LibraryItem {
-    public void checkOut(){
+    static int cdcount = 0;
+    Scanner sc = new Scanner(System.in);
+
+    class cd {
+        String title, author, duration;
+        int ISBN;
+        boolean availability;
 
     }
 
-    public void checkIn(){
+    cd d[] = new cd[100];
+
+    public void add() {
+        cdcount++;
+        System.out.print("Enter name of book =");
+        d[cdcount].title = sc.nextLine();
+        System.out.print("Enter author name of book =");
+        d[cdcount].author = sc.nextLine();
+        System.out.print("Enter ISBN of book =");
+        d[cdcount].ISBN = sc.nextInt();
 
     }
 
-    public boolean isAvailable(){
+    public void checkOut() {
+
+    }
+
+    public void checkIn() {
+
+    }
+
+    public boolean isAvailable() {
         return true;
     }
 }
 
 class Library implements LibraryItem {
-    public void checkOut(){
+        
+
+    public void checkOut() {
 
     }
 
-    public void checkIn(){
+    public void checkIn() {
 
     }
 
-    public boolean isAvailable(){
+    public boolean isAvailable() {
         return true;
     }
 }
