@@ -10,7 +10,7 @@ class count {
     }
 }
 
-public class Q5ObjectCount {
+public class ObjCount {
 
     public static void main(String[] args) {
         count O1 = new count();
