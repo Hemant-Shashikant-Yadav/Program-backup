@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ScrollableTextUI",
+            "request": "launch",
+            "mainClass": "ScrollableTextUI",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
+            "name": "ScrollableTextUI1",
+            "request": "launch",
+            "mainClass": "ScrollableTextUI1",
+            "projectName": "Codes_427a558f"
+        },
+        {
+            "type": "java",
             "name": "Q12student",
             "request": "launch",
             "mainClass": "Q12student",
