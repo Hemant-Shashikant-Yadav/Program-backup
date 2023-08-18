@@ -53,7 +53,9 @@ public class MergeSort {
         merge(head, newNode);
     }
 
-    public void merge(Node )
+    public void merge(Node head,Node newNode){
+        
+    }
 
     public static void main(String[] args) {
 
