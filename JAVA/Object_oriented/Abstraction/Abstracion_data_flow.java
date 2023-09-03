@@ -5,7 +5,7 @@ public class Abstracion_data_flow {
     }
 }
 
-abstract class animal {
+abstract class animal1 {
 
     void eats() {
         System.out.println("Animal eates food");
@@ -13,22 +13,22 @@ abstract class animal {
 
     abstract void walk();
 
-    animal() {
+    animal1() {
         System.out.println("Animal constructor is called.");
     }
 }
 
-class horse extends animal {
+class horse1 extends animal1 {
     void walk() {
         System.out.println("Walks on 4 legs");
     }
 
-    horse() {
+    horse1() {
         System.out.println("Horse constructor is called");
     }
 }
 
-class raceHorse extends horse {
+class raceHorse extends horse1 {
 
     raceHorse() {
         System.out.println("raceHose constructor called.");

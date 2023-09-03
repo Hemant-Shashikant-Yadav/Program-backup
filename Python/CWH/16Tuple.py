@@ -40,6 +40,15 @@ print(a)
 print(b)
 print(c)
 
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)#apple
+print(yellow)#banana
+print(red) #"cherry", "strawberry", "raspberry"
+
 #6
 
 # Concatenation of tuples
@@ -73,8 +82,7 @@ print(Tuple1[4:9])
 
 Tuple1 = (0, 1, 2, 3, 4)
 del Tuple1
-
-print(Tuple1)
+#print(Tuple1)
 
 #9
 #Tuples are unchangeable, or immutable
@@ -105,4 +113,12 @@ thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.remove("apple")
 thistuple = tuple(y)
+
+#10
+#Access Tuple Items
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1]) #banana
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[-1])#cherry
 
