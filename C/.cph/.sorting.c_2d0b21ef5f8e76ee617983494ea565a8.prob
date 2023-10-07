@@ -1,1 +1,0 @@
-{"name":"Local: sorting","url":"h:\\Coding\\Codes\\C Exercise\\sorting.c","tests":[{"id":1662461555047,"input":"5\n15 65 12 1352 17\n12","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Coding\\Codes\\C Exercise\\sorting.c","group":"local","local":true}
